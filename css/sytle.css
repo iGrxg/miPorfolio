@@ -1,0 +1,617 @@
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+.bodyInicio{
+    background-color:#f6f5f5 ;
+}
+
+.bodyInicio::-webkit-scrollbar{
+    width: 7px;
+}
+
+.bodyInicio::-webkit-scrollbar-thumb{
+    background-color: #09857e ;
+    border-radius: 5px;
+}
+
+/*INICIO----------------------------------------*/
+
+.contenedorInicio{
+    width: 100%;
+    height: 95vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: grid;
+    grid-template-columns: 0.3fr 1fr;
+    grid-template-rows: 0.1fr 1fr;
+    grid-template-areas: 
+    "logo menu"
+    "principalInicio principalInicio"
+    ;
+}
+
+.logo{
+    grid-area: logo;
+}
+
+.padre{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffff ;
+    box-shadow: 0px 2px 12px rgba(0,0,0,0.2);
+}
+
+.gz{
+    margin-top: 0.44rem;
+    margin-right: 0.5rem;
+}
+
+.titulo{
+    font-size: 1.6rem;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color:rgba(0, 0, 0, 0.897);
+}
+
+.menu{
+    grid-area: menu;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    background-color: #ffff ;
+    box-shadow: 0px 2px 12px rgba(0,0,0,0.2);
+}
+
+.menu ul li a{
+    text-decoration: none;
+    padding: 0.7rem;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: #505050;
+    font-size: 1rem;
+    font-weight: 700;
+}
+
+.menu ul li a:hover{
+    background-color: #09857e ;
+    border-radius: 0.6rem;
+    color: #ffff;
+}
+
+
+.menu ul li:active{
+    transform: scale(1.1);
+}
+
+.menu ul{
+    list-style: none;
+    display: flex;
+}
+
+.menu ul li{
+    margin-right: 2rem;
+}
+
+
+
+.principalInicio{
+    grid-area: principalInicio;
+    display: grid;
+    grid-template-columns: 1fr 1.2fr;
+    grid-template-rows: 1fr;
+    grid-template-areas:
+    "textContainer model";
+}
+
+.textContainer{
+    grid-area: textContainer;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 3.12rem;
+    margin-left: 3.12rem;
+    padding: 0rem 0.63rem 0rem 2.5rem;
+}
+
+.model{
+    grid-area: model;
+    display: flex;
+    flex-direction: column;
+}
+
+.hola{
+    position: relative;
+    top: 1.25rem;
+}
+
+.textContainer p:nth-child(1){
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: bold;
+    color: #6d6d6d;
+    font-size: 1.6rem;
+}
+
+.textContainer p:nth-child(2){
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: bold;
+    letter-spacing: 1px;
+    color: #1a1a1a;
+    font-size: 2.5rem;
+    width: 32vh;
+}
+
+.textContainer p:nth-child(3){
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: #403e3e;
+    font-size: 1.8rem;
+    line-height: 1.8px;
+}
+
+.textContainer p:nth-child(4){
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: #535151;
+    font-size: 1.5rem;
+    line-height: 1.8px;
+}
+
+.textContainer p{
+     padding: 0.75rem;
+}
+
+
+.textContainer button{
+    width: 8.2rem;
+    height: 2.6rem;
+    border-radius: 0.8rem;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: bold;
+    font-size: 0.9rem;
+    outline: none;
+    margin-left: 0.63rem;
+}
+
+.bot{
+    margin-top: 0.63rem;
+}
+
+.contratar{
+    border: 2px solid #373636;
+    color: #373636;
+}
+
+.contratar:hover{
+    cursor: pointer;
+}
+
+.curr{
+    background-color: #09857e;
+    color: #ffff;
+    border: none;
+}
+
+.curr:hover{
+    cursor: pointer;
+}
+
+button:active{
+    transform: scale(1.1);
+}
+
+/*SOBRE MI--------------------------------------------------------*/
+.sobreContainer{
+    width: 80%;
+    height: 20.6rem;
+    background-color: #ffff;
+    border-radius: 1.25rem;
+    box-shadow: 2px 2px 12px rgba(0,0,0,0.2);
+    display: flex;
+    margin: -7% auto 20px auto;
+    position: relative;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.sobreContainer img{
+    height: 15.6rem;
+}
+
+.sobreText{
+    width: 34.3rem;
+}
+
+.sobreText p:nth-child(1){
+    color: #403e3e;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif ;
+    font-weight: bold;
+    font-size: 1.6rem;
+    line-height: 0px;
+    margin-bottom: 1.87rem;
+}
+
+.sobreText p:nth-child(2){
+    color: #09857e;
+    font-size: 1rem;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: bold;
+    line-height: 0.32rem;
+    margin-bottom: 2.5rem;
+}
+
+.sobreText p:nth-child(3), .sobreText p:nth-child(4){
+    color: #7e7d7d;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 1rem;
+    position: relative;
+    bottom: 1.56rem;
+}
+
+span{
+    color: #3e3d3d ;
+}
+
+/*SERVICIOS-----------------------------------*/
+
+.servicios{
+    height: 37.5rem;
+    background-color: #ffff;
+    padding: 2% 10% 0px 10%;
+}
+
+.serviciosText p:nth-child(1){
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: bold;
+    color: #3e3d3d;
+    font-size: 1.9rem;
+    line-height: 0px;
+    margin-bottom: 1.87rem;
+}
+
+.serviciosText p:nth-child(2){
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: bold;
+    color: #3e3d3d;
+    font-size: 0.9rem;
+    line-height: 5px;
+    margin-bottom: 0.63rem;
+}
+
+.serviciosText p:nth-child(3){
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: #7e7d7d;
+}
+
+.serviciosText{
+    width: 31.25rem;
+    margin-top: 3.13rem;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1.8rem;
+}
+
+.cajaUno, .cajaDos, .cajaTres{
+    width:18.75rem;
+    height: 20rem;
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-shadow: 4px 4px 15px rgba(0,0,0,0.6);
+    background-color: black;
+    border: 2.5px solid #09857e;
+    border-radius: 1.25rem;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.cajaContainer{
+    display: flex;
+    justify-content: space-between;
+}
+
+.cajaUno span, .cajaDos span, .cajaTres span{
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 50%;
+    border: 0.5px solid #ffff;
+    background-color: rgb(75, 71, 71);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif ;
+    font-weight: bold;
+    margin-top: 1.87rem;
+    color: #ffff;
+}
+
+.cajaUno p:nth-child(2), .cajaDos p:nth-child(2), .cajaTres p:nth-child(2){
+    color: #ffff;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 1.4rem;
+    line-height: 0px;
+    margin-bottom: 1.24rem;
+    margin-top: 1rem;
+}
+
+.cajaUno p:nth-child(3), .cajaDos p:nth-child(3), .cajaTres p:nth-child(3){
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: center;
+    width: 14.3rem;
+    margin-bottom: 1.25rem;
+    color: #8f8f8f;
+}
+
+.cajaUno button, .cajaDos button, .cajaTres button{
+    background-color: #09857e;
+    border: 0.5px solid #ffff;
+    outline: none;
+    border-radius:0.31rem ;
+    padding: 0.5rem;
+    position: relative;
+    bottom: 0.31rem;
+    color: #ffff;
+}
+
+.cajaUno button:hover, .cajaDos button:hover, .cajaTres button:hover{
+    cursor: pointer;
+}
+
+/*CONTACTO-------------------------------------------------*/
+
+.contacto{
+    width: 100%;
+    height: 17.5rem;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url(../img/contacto.png);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1.25rem;
+}
+
+.contacto p{
+    color: #ffff;
+    font-size: 1.8rem;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: bold;
+    border-bottom: 2px solid #ffff;
+}
+
+.contacto button{
+    width:12.5rem ;
+    height: 2.5rem;
+    background-color: #09857e;
+    color: #ffff;
+    border: none;
+    border-radius: 1.25rem;
+    outline: none;
+    font-size: 0.8rem;
+    font-weight: bold;
+    margin-top: 1.25rem;
+}
+
+.contacto button:hover{
+    cursor: pointer;
+}
+
+/*FOOTER-----------------------------------------*/
+
+footer{
+    height: 18.75rem;
+}
+
+footer p{
+	font-family: calibri;
+}
+footer p:nth-child(1){
+	font-size: 2.3rem;
+	font-weight:bold;
+	color:#191919;
+	line-height:0.62rem;
+    margin-bottom: 2.5rem;
+}
+footer p:nth-child(2){
+	font-size: 1rem;
+	color:#7e7d7d;
+	width:37.5rem;
+	text-align: center;
+}
+footer{
+	height:18.75rem;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	position: relative;
+}
+.iconos a{
+	width:2.5rem;
+	height:2.5rem;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color:#e6e3e3;
+	margin:1.25rem 0.63rem;
+	border-radius:50%;
+    border: 0.5px solid rgba(0, 0, 0, 0.11);
+    list-style-type: none;
+}
+.iconos{
+	display: flex;
+    text-decoration: none;
+}
+.iconos i,.social i{
+	color:#09857e;
+}
+.iconos a:hover{
+	background-color:#09857e;
+	box-shadow:2px 2px 12px rgba(0,0,0,0.2);
+	transition:all ease 0.5s;
+}
+.iconos a:hover i{
+	color:#FFFFFF;
+	transition:all ease 0.5s;
+}
+ 
+.copyright{
+	color:#565555;
+	font-size: 0.8rem;
+	position: absolute;
+	left:50%;
+	bottom:10px;
+	transform: translateX(-50%);
+}
+
+/*MEDIA QUERIES-----------------------------*/
+
+@media screen and (max-width: 480px ){
+    .titulo{
+        display: none;
+    }
+
+    .gz{
+        height: 30px;
+        margin-left: 20px;
+        background-color: #f6f5f5;
+    }
+
+    .menu ul li a{
+        font-size: 10px;
+        display: flex;
+        flex-wrap: nowrap;
+   }
+
+   .menu{
+       height: 42px;
+       display: flex;
+       flex-wrap: nowrap;
+       width: 70vh;
+   }
+
+   .textContainer{
+       margin-left: 30px;
+       margin-right: 20px;
+       padding: 0px;
+       position: relative;
+       bottom: 60px;
+    }
+
+    .textContainer p:nth-child(1){
+        font-size: 20px;
+    }
+
+
+    .textContainer p:nth-child(2){
+        font-size: 25px;
+    }
+
+    .textContainer p:nth-child(3){
+        font-size: 15px;
+    }
+
+    .textContainer p:nth-child(4){
+        font-size: 15px;
+    }
+
+    .sobreText p:nth-child(1){
+        font-size: 20px;
+    }
+
+    .sobreText p:nth-child(2){
+        font-size: 15px;
+    }
+
+    .sobreText p:nth-child(3){
+        font-size: 12px;
+    }
+
+    .sobreText p:nth-child(4){
+        font-size: 12px;
+    }
+
+    .yo{
+        margin-bottom: 30px;
+        margin-right: 10px;
+        margin-left: 10px;
+    }
+
+    .servicios{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+
+    .serviciosText p:nth-child(2){
+        display: none;
+    }
+    .serviciosText p:nth-child(3){
+        display: none;
+    }
+
+    .cajaUno p:nth-child(3), .cajaDos p:nth-child(3), .cajaTres p:nth-child(3){
+        display: none;
+    }
+       
+    
+    .cajaUno, .cajaDos, .cajaTres{
+        height: 160px;
+    }
+    
+    .cajaUno span, .cajaDos span, .cajaTres span{
+        display: none;
+    }
+
+    .cajaUno p:nth-child(2), .cajaDos p:nth-child(2), .cajaTres p:nth-child(2){
+        margin-top: 30px;
+        font-size: 13px;
+    }
+
+    .cajaUno button, .cajaDos button, .cajaTres button{
+        height: 50px;
+        width: 50px;
+        margin-top: 20px;
+        border-radius: 100px;
+    }
+
+    .contacto p{
+        font-size: 25px;
+    }
+
+    footer p:nth-child(2){
+        font-size: 10px;
+    }
+}
+
+@media screen and (max-width: 784px ){
+    .textContainer{
+        margin-left: 30px;
+        margin-right: 20px;
+        padding: 0px;
+        position: relative;
+        bottom: 60px;
+     }
+ 
+     .textContainer p:nth-child(1){
+         font-size: 20px;
+     }
+ 
+ 
+     .textContainer p:nth-child(2){
+         font-size: 25px;
+     }
+ 
+     .textContainer p:nth-child(3){
+         font-size: 15px;
+     }
+ 
+     .textContainer p:nth-child(4){
+         font-size: 15px;
+     }
+}
