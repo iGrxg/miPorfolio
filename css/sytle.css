@@ -37,69 +37,6 @@ html{
     ;
 }
 
-.logo{
-    grid-area: logo;
-}
-
-.padre{
-    display:flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #ffff ;
-    box-shadow: 0px 2px 12px rgba(0,0,0,0.2);
-}
-
-.gz{
-    margin-top: 0.44rem;
-    margin-right: 0.5rem;
-}
-
-.titulo{
-    font-size: 1.6rem;
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    color:rgba(0, 0, 0, 0.897);
-}
-
-.menu{
-    grid-area: menu;
-    display: flex;
-    justify-content: end;
-    align-items: center;
-    background-color: #ffff ;
-    box-shadow: 0px 2px 12px rgba(0,0,0,0.2);
-}
-
-.menu ul li a{
-    text-decoration: none;
-    padding: 0.7rem;
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    color: #505050;
-    font-size: 1rem;
-    font-weight: 700;
-}
-
-.menu ul li a:hover{
-    background-color: #09857e ;
-    border-radius: 0.6rem;
-    color: #ffff;
-}
-
-
-.menu ul li:active{
-    transform: scale(1.1);
-}
-
-.menu ul{
-    list-style: none;
-    display: flex;
-}
-
-.menu ul li{
-    margin-right: 2rem;
-}
-
-
-
 .principalInicio{
     grid-area: principalInicio;
     display: grid;
@@ -114,54 +51,46 @@ html{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    margin-bottom: 3.12rem;
     margin-left: 3.12rem;
-    padding: 0rem 0.63rem 0rem 2.5rem;
+    margin-bottom: 10%;
 }
 
 .model{
     grid-area: model;
     display: flex;
     flex-direction: column;
+    justify-content: center;
 }
 
-.hola{
-    position: relative;
-    top: 1.25rem;
-}
-
-.textContainer p:nth-child(1){
+.textContainer h3:nth-child(1){
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-weight: bold;
     color: #6d6d6d;
     font-size: 1.6rem;
 }
 
-.textContainer p:nth-child(2){
+.textContainer h1:nth-child(2){
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-weight: bold;
     letter-spacing: 1px;
     color: #1a1a1a;
     font-size: 2.5rem;
-    width: 32vh;
 }
 
-.textContainer p:nth-child(3){
+.textContainer h3:nth-child(3){
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     color: #403e3e;
     font-size: 1.8rem;
-    line-height: 1.8px;
 }
 
-.textContainer p:nth-child(4){
+.textContainer h3:nth-child(4){
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     color: #535151;
-    font-size: 1.5rem;
-    line-height: 1.8px;
+    font-size: 1.5rem;    
 }
 
 .textContainer p{
-     padding: 0.75rem;
+     padding: 0.5rem;
 }
 
 
@@ -295,13 +224,13 @@ span{
 }
 
 .cajaUno, .cajaDos, .cajaTres{
-    width:18.75rem;
-    height: 20rem;
+    width:15.75rem;
+    height: 17rem;
     background-repeat: no-repeat;
     background-size: cover;
     box-shadow: 4px 4px 15px rgba(0,0,0,0.6);
     background-color: black;
-    border: 2.5px solid #09857e;
+    border: 2.5px solid #ffffff;
     border-radius: 1.25rem;
     display: flex;
     align-items: center;
@@ -358,6 +287,8 @@ span{
 
 .cajaUno button:hover, .cajaDos button:hover, .cajaTres button:hover{
     cursor: pointer;
+    background-color: #bbf5f2;
+    color: black;
 }
 
 /*CONTACTO-------------------------------------------------*/
@@ -440,11 +371,10 @@ footer{
 	margin:1.25rem 0.63rem;
 	border-radius:50%;
     border: 0.5px solid rgba(0, 0, 0, 0.11);
-    list-style-type: none;
+    text-decoration: none;
 }
 .iconos{
 	display: flex;
-    text-decoration: none;
 }
 .iconos i,.social i{
 	color:#09857e;
@@ -502,20 +432,20 @@ footer{
        bottom: 60px;
     }
 
-    .textContainer p:nth-child(1){
+    .textContainer h3:nth-child(1){
         font-size: 20px;
     }
 
 
-    .textContainer p:nth-child(2){
+    .textContainer h1:nth-child(2){
         font-size: 25px;
     }
 
-    .textContainer p:nth-child(3){
+    .textContainer h3:nth-child(3){
         font-size: 15px;
     }
 
-    .textContainer p:nth-child(4){
+    .textContainer h3:nth-child(4){
         font-size: 15px;
     }
 
@@ -578,6 +508,7 @@ footer{
         width: 50px;
         margin-top: 20px;
         border-radius: 100px;
+        font-size: 10px;
     }
 
     .contacto p{
@@ -784,4 +715,9 @@ textarea{
 
 .navbar-toggler{
     color:#09857e ;
+}
+
+.navbar{
+    box-shadow: 0px 2px 12px rgba(0,0,0,0.2);
+    position: absolute;
 }
