@@ -400,29 +400,7 @@ footer{
 /*MEDIA QUERIES-----------------------------*/
 
 @media screen and (max-width: 480px ){
-    .titulo{
-        display: none;
-    }
-
-    .gz{
-        height: 30px;
-        margin-left: 20px;
-        background-color: #f6f5f5;
-    }
-
-    .menu ul li a{
-        font-size: 10px;
-        display: flex;
-        flex-wrap: nowrap;
-   }
-
-   .menu{
-       height: 42px;
-       display: flex;
-       flex-wrap: nowrap;
-       width: 70vh;
-   }
-
+    
    .textContainer{
        margin-left: 30px;
        margin-right: 20px;
@@ -470,6 +448,11 @@ footer{
         margin-left: 10px;
     }
 
+    .sobreContainer{
+        height: 350px;
+        width: 100%;
+    }
+
     .servicios{
         display: flex;
         flex-direction: column;
@@ -491,6 +474,8 @@ footer{
     
     .cajaUno, .cajaDos, .cajaTres{
         height: 160px;
+        width: 300px;
+
     }
     
     .cajaUno span, .cajaDos span, .cajaTres span{
@@ -506,7 +491,6 @@ footer{
         height: 50px;
         width: 50px;
         margin-top: 20px;
-        border-radius: 100px;
         font-size: 10px;
     }
 
@@ -520,30 +504,64 @@ footer{
 }
 
 @media screen and (max-width: 784px ){
+
     .textContainer{
-        margin-left: 30px;
-        margin-right: 20px;
-        padding: 0px;
-        position: relative;
-        bottom: 60px;
+        margin-top: 60px;
      }
  
-     .textContainer p:nth-child(1){
+     .textContainer h3:nth-child(1){
          font-size: 20px;
      }
  
  
-     .textContainer p:nth-child(2){
+     .textContainer h1:nth-child(2){
          font-size: 25px;
      }
  
-     .textContainer p:nth-child(3){
+     .textContainer h3:nth-child(3){
          font-size: 15px;
      }
  
-     .textContainer p:nth-child(4){
+     .textContainer h3:nth-child(4){
          font-size: 15px;
      }
+     .servicios{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .sobreContainer{
+        height: 350px;
+        width: 100%;
+    }
+
+    .cajaUno p:nth-child(3), .cajaDos p:nth-child(3), .cajaTres p:nth-child(3){
+        display: none;
+    }
+       
+    
+    .cajaUno, .cajaDos, .cajaTres{
+        height: 160px;
+        width: 300px;
+
+    }
+    
+    .cajaUno span, .cajaDos span, .cajaTres span{
+        display: none;
+    }
+
+    .cajaUno p:nth-child(2), .cajaDos p:nth-child(2), .cajaTres p:nth-child(2){
+        margin-top: 30px;
+        font-size: 13px;
+    }
+
+    .cajaUno button, .cajaDos button, .cajaTres button{
+        height: 50px;
+        width: 50px;
+        margin-top: 20px;
+        font-size: 10px;
+    }
 }
 
 
