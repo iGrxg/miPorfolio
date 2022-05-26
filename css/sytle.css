@@ -24,7 +24,7 @@ html{
 /*INICIO----------------------------------------*/
 
 .contenedorInicio{
-    height: 90vh;
+    height: 100vh;
     background-repeat: no-repeat;
     background-size: cover;
     display: grid;
@@ -59,6 +59,9 @@ html{
     display: flex;
     flex-direction: column;
     justify-content: center;
+    margin-top: 30px;
+    height: 450px;
+    width: 350px;
 }
 
 .textContainer h3:nth-child(1){
@@ -88,11 +91,6 @@ html{
     font-size: 1.5rem;    
 }
 
-.textContainer p{
-     padding: 0.5rem;
-}
-
-
 .textContainer button{
     width: 8.2rem;
     height: 2.6rem;
@@ -102,10 +100,6 @@ html{
     font-size: 0.9rem;
     outline: none;
     margin-left: 0.63rem;
-}
-
-.bot{
-    margin-top: 0.63rem;
 }
 
 .contratar{
@@ -150,7 +144,7 @@ button:active{
 }
 
 .sobreText{
-    width: 34.3rem;
+    width: 35.3rem;
 }
 
 .sobreText p:nth-child(1){
@@ -227,7 +221,7 @@ span{
     height: 17rem;
     background-repeat: no-repeat;
     background-size: cover;
-    box-shadow: 4px 4px 15px rgba(0,0,0,0.6);
+    box-shadow: 4px 4px 15px rgba(0,0,0,0.8);
     background-color: black;
     border: 2.5px solid #ffffff;
     border-radius: 1.25rem;
@@ -238,7 +232,7 @@ span{
 
 .cajaContainer{
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
 }
 
 .cajaUno span, .cajaDos span, .cajaTres span{
@@ -332,10 +326,6 @@ span{
 
 /*FOOTER-----------------------------------------*/
 
-footer{
-    height: 18.75rem;
-}
-
 footer p{
 	font-family: calibri;
 }
@@ -401,6 +391,11 @@ footer{
 
 @media screen and (max-width: 480px ){
     
+    .model{
+        height: 300px;
+        width: 200px;
+    }
+
    .textContainer{
        margin-left: 30px;
        margin-right: 20px;
@@ -737,4 +732,11 @@ textarea{
 .navbar{
     box-shadow: 0px 2px 12px rgba(0,0,0,0.2);
     position: absolute;
+}
+
+.imagen-nav{
+    display: flex;
+    justify-content: center;
+    margin-top: 5%;
+    opacity: 0.4;
 }
