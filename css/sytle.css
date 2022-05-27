@@ -407,8 +407,9 @@ footer{
 @media screen and (max-width: 480px ){
     
     .model{
-        height: 300px;
-        width: 200px;
+        position: relative;
+        right: 30px;
+        border: solid;
     }
 
    .textContainer{
