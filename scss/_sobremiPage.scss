@@ -1,0 +1,101 @@
+.bodySobremi{
+    background-color: #f1ebeb;
+    overflow-x: hidden;
+    &::-webkit-scrollbar{
+        width: 7px;
+    }
+    
+    &::-webkit-scrollbar-thumb{
+        background-color: #09857e ;
+        border-radius: 5px;
+    }
+}
+
+.sobreMi{
+    width: 100%;
+    height: 100vh;
+    .contenidoSobremi{
+        background-color: #fff;
+        width: 1280px;
+        max-width: 95%;
+        margin: 0 auto;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-around;
+        box-shadow: 2px 2px 16px rgba(0,0,0,0.2);
+        & img{
+            height: auto;
+            width: 550px;
+            max-width: 100%;
+        }
+        .textSobremi{
+            width: 550px;
+            max-width: 100%;
+            padding: 0 10px;
+            & h1{
+                color: #403e3e;
+                font-size: 85px;
+                margin-bottom: 20px;
+            }
+            & h2{
+                color: #09857e;
+                font-size: 25px;
+                margin-bottom: 25px;
+                letter-spacing: 2px;
+            }
+            & p{
+                color: #7e7d7d;
+                font-size: 18px;
+                line-height: 28px;
+                letter-spacing: 1px;
+                margin-bottom: 45px;
+            }
+            .social{
+                display: flex;
+                & a{
+                    width:2.5rem;
+                    height:2.5rem;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    background-color:#e6e3e3;
+                    margin:1.25rem 0.63rem;
+                    border-radius:50%;
+                    border: 0.5px solid rgba(0, 0, 0, 0.11);
+                    text-decoration: none;
+                    &:hover{
+                        background-color:#09857e;
+                        box-shadow:2px 2px 12px rgba(0,0,0,0.2);
+                        transition:all ease 0.5s;
+                    }
+                    &:hover i{
+                        color:#FFFFFF;
+                        transition:all ease 0.5s;
+                    }
+                }
+                & i{
+                    color:#09857e;
+                }
+                .porfolio{
+                    background-color: #09857e;
+                    color: #ffff;
+                    border: 2px solid transparent;
+                    padding: 10px 30px;
+                    border-radius: 30px;
+                    font-size: 17px;
+                    font-weight: bold;
+                    &:hover{
+                        color: black;
+                        border:2px solid #09857e;
+                        background-color: #fff;
+                    }
+                    &:active{
+                        transform: scale(1.1);
+                    }
+                }
+            }
+               
+        }
+    }
+}

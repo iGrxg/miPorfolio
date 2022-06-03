@@ -4,10 +4,11 @@
     overflow-x: hidden;
     &::-webkit-scrollbar{
         width: 7px;
-        &:-webkit-scrollbar-thumb{
-            background-color: #09857e;
-            border-radius: 5px;
-        }
+    }
+    
+    &::-webkit-scrollbar-thumb{
+        background-color: #09857e ;
+        border-radius: 5px;
     }
 }
 
@@ -39,8 +40,8 @@
         flex-direction: column;
         justify-content: center;
         margin-top: 30px;
-        height: 450px;
-        width: 350px; 
+        height: 600px;
+        width: 500px; 
     }
     .textContainer{
         grid-area: textContainer;
@@ -84,7 +85,7 @@
         }
         .contratar{
             border: 2px solid #373636;
-            color: #373636;
+            color: black;
             &:hover{
                 cursor: pointer;
             }
@@ -95,6 +96,9 @@
             border: none;
             &:hover{
                 cursor: pointer;
+                color: black;
+                border:2px solid #09857e;
+                background-color: #fff;
             }
         }       
         button:active{

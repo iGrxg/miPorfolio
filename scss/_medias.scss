@@ -12,20 +12,17 @@
             padding: 0px;
             position: relative;
             bottom: 60px;
-            .textContainer h3:nth-child(1){
+            & h3:nth-child(1){
                 font-size: 20px;
             }
-        
-        
-            .textContainer h1:nth-child(2){
+            & h1:nth-child(2){
                 font-size: 25px;
-            }
-        
-            .textContainer h3:nth-child(3){
+            }       
+            & h3:nth-child(3){
                 font-size: 15px;
             }
         
-            .textContainer h3:nth-child(4){
+            & h3:nth-child(4){
                 font-size: 15px;
             }
          }
@@ -34,23 +31,23 @@
         height: 350px;
         width: 100%;
         .sobreText{
-            .sobreText p:nth-child(1){
+            &p:nth-child(1){
                 font-size: 20px;
             }
         
-            .sobreText p:nth-child(2){
+            & p:nth-child(2){
                 font-size: 15px;
             }
         
-            .sobreText p:nth-child(3){
+            & p:nth-child(3){
                 font-size: 12px;
             }
         
-            .sobreText p:nth-child(4){
+            & p:nth-child(4){
                 font-size: 12px;
             }
         }
-        .sobreContainer img{
+        & img{
             margin-bottom: 30px;
             margin-right: 10px;
             margin-left: 10px;
@@ -61,49 +58,83 @@
         flex-direction: column;
         justify-content: center;
         .serviciosText{
-            .serviciosText p:nth-child(2){
+            & p:nth-child(2){
                 display: none;
             }
-            .serviciosText p:nth-child(3){
+            & p:nth-child(3){
                 display: none;
             }
         }
         .cajaCointaner{
-            .cajaUno p:nth-child(3), .cajaDos p:nth-child(3), .cajaTres p:nth-child(3){
-                display: none;
-            }
-               
-            
-            .cajaUno, .cajaDos, .cajaTres{
+            .cajaUno{
                 height: 160px;
                 width: 300px;
-        
+                & span{
+                    display: none;
+                }
+                & p:nth-child(2){
+                    margin-top: 30px;
+                    font-size: 13px;
+                }
+                & p:nth-child(3){
+                    display: none;
+                }
+                & button{
+                    height: 50px;
+                    width: 50px;
+                    margin-top: 20px;
+                    font-size: 10px;
+                }
             }
-            
-            .cajaUno span, .cajaDos span, .cajaTres span{
-                display: none;
+            .cajaDos{
+                height: 160px;
+                width: 300px;
+                & span{
+                    display: none;
+                }
+                & p:nth-child(2){
+                    margin-top: 30px;
+                    font-size: 13px;
+                }
+                & p:nth-child(3){
+                    display: none;
+                }
+                & button{
+                    height: 50px;
+                    width: 50px;
+                    margin-top: 20px;
+                    font-size: 10px;
+                }
             }
-        
-            .cajaUno p:nth-child(2), .cajaDos p:nth-child(2), .cajaTres p:nth-child(2){
-                margin-top: 30px;
-                font-size: 13px;
-            }
-        
-            .cajaUno button, .cajaDos button, .cajaTres button{
-                height: 50px;
-                width: 50px;
-                margin-top: 20px;
-                font-size: 10px;
+            .cajaTres{
+                height: 160px;
+                width: 300px;
+                & span{
+                    display: none;
+                }
+                & p:nth-child(2){
+                    margin-top: 30px;
+                    font-size: 13px;
+                }
+                & p:nth-child(3){
+                    display: none;
+                }
+                & button{
+                    height: 50px;
+                    width: 50px;
+                    margin-top: 20px;
+                    font-size: 10px;
+                }
             }
         }
     }
     .contacto{
-        .contacto p{
+        & p{
             font-size: 25px;
         }
     }
     footer{
-        footer p:nth-child(2){
+        & p:nth-child(2){
             font-size: 10px;
         }
     }

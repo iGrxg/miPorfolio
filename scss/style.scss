@@ -11,51 +11,64 @@ html{
 
 @import "inicio";
 @import "sobremi";
+@import "sobremiPage";
 @import "servicios";
+@import "disenio";
+@import "programador";
+@import "mantenimiento";
 @import "contacto";
-@import "footer";
-@import "mq";
 @import "contactoPage";
-@import "utilities/variables";
+@import "footer";
+@import "medias";
+@import "contactoPage";
 
-.navbar{
-    box-shadow: 0px 2px 12px rgba(0,0,0,0.2);
-    position: absolute;
-        .navbar-brand{
-            font-size: 1.6rem;
-            font-weight: 700;
-            .navbar-toggler{
-                color:#09857e ;
-            }
-    }
-        .offcanvas-header{
-            background-color: #f6f5f5;
-            box-shadow: 0px 2px 12px rgba(0,0,0,0.2);
-            .offcanvas-title{
+
+.contenedorInicio{
+    .navbar{
+        box-shadow: 0px 2px 12px rgba(0,0,0,0.2);
+        position: absolute;
+        .container-fluid{
+            .navbar-brand{
                 font-size: 1.6rem;
                 font-weight: 700;
             }
-        .offcanvas-body{
-            .nav-item{
-                height: fit-content;
-                width: fit-content;
-                .nav-item:active{
-                    transform: scale(1.1);
+            .navbar-toggler{
+                color:#09857e ;
+            }
+            .offcanvas{
+                .offcanvas-header{
+                    background-color: #f6f5f5;
+                    box-shadow: 0px 2px 12px rgba(0,0,0,0.2);
+                    .offcanvas-title{
+                        font-size: 1.6rem;
+                        font-weight: 700; 
+                    }
                 }
-                .nav-item:hover{
-                    background-color: #09857e;
-                    height: fit-content;
-                    width: fit-content;
-                    border-radius: 5px;
-                    padding-left: 5px;
-                    padding-right: 8px;
+                .offcanvas-body{
+                    .navbar-nav{
+                        .nav-item{
+                            height: fit-content;
+                            width: fit-content;
+                            & :active{
+                                transform: scale(1.1);
+                            }
+                            & :hover{
+                                background-color: #09857e;
+                                height: fit-content;
+                                width: fit-content;
+                                border-radius: 5px;
+                                padding-left: 5px;
+                                padding-right: 8px;
+                            } 
+                        }
+                    }
+                    .imagen-nav{
+                        display: flex;
+                        justify-content: center;
+                        margin-top: 5%;
+                        opacity: 0.4;
+                    }
                 }
-            .imagen-nav{
-                display: flex;
-                justify-content: center;
-                margin-top: 5%;
-                opacity: 0.4;
-            }    
             }
         }
     }
