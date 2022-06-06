@@ -1,14 +1,7 @@
 .bodySobremi{
     background-color: #f1ebeb;
     overflow-x: hidden;
-    &::-webkit-scrollbar{
-        width: 7px;
-    }
-    
-    &::-webkit-scrollbar-thumb{
-        background-color: #09857e ;
-        border-radius: 5px;
-    }
+    font-family: $fontPrincipal;
 }
 
 .sobreMi{
@@ -39,7 +32,7 @@
                 margin-bottom: 20px;
             }
             & h2{
-                color: #09857e;
+                color: $colorPrincipal;
                 font-size: 25px;
                 margin-bottom: 25px;
                 letter-spacing: 2px;
@@ -65,7 +58,7 @@
                     border: 0.5px solid rgba(0, 0, 0, 0.11);
                     text-decoration: none;
                     &:hover{
-                        background-color:#09857e;
+                        background-color:$colorPrincipal;
                         box-shadow:2px 2px 12px rgba(0,0,0,0.2);
                         transition:all ease 0.5s;
                     }
@@ -75,10 +68,10 @@
                     }
                 }
                 & i{
-                    color:#09857e;
+                    color:$colorPrincipal;
                 }
                 .porfolio{
-                    background-color: #09857e;
+                    background-color: $colorPrincipal;
                     color: #ffff;
                     border: 2px solid transparent;
                     padding: 10px 30px;
@@ -87,15 +80,15 @@
                     font-weight: bold;
                     &:hover{
                         color: black;
-                        border:2px solid #09857e;
+                        border:2px solid $colorPrincipal;
                         background-color: #fff;
+                        transition:all ease 0.5s;
                     }
                     &:active{
                         transform: scale(1.1);
                     }
                 }
-            }
-               
+            }               
         }
     }
 }

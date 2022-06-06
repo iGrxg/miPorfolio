@@ -1,11 +1,12 @@
 .bodyDisenio{
-    background-color: #36a7a1;
+    background-color: $backgroundServicios;
+    font-family: $fontPrincipal;
     &::-webkit-scrollbar{
         width: 7px;
     }
     
     &::-webkit-scrollbar-thumb{
-        background-color: #09857e ;
+        background-color: $colorPrincipal ;
         border-radius: 5px;
     }
 }
@@ -30,18 +31,18 @@
             padding: 0 10px;
             & h1{
                 color: #403e3e;
-                font-size: 85px;
+                font-size: $tamanoTitulo;
                 margin-bottom: 20px;
             }
             & h2{
-                color: #09857e;
-                font-size: 25px;
+                color: $colorPrincipal;
+                font-size: $tamanoSubtitulo;
                 margin-bottom: 25px;
                 letter-spacing: 2px;
             }
             & p{
                 color: #7e7d7d;
-                font-size: 18px;
+                font-size: $tamanoParrafo;
                 line-height: 28px;
                 letter-spacing: 1px;
                 margin-bottom: 45px;

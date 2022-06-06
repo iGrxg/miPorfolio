@@ -9,7 +9,7 @@
         flex-direction: column;
         margin-bottom: 1.8rem;
         & p:nth-child(1){
-            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-family: $fontPrincipal;
             font-weight: bold;
             color: #3e3d3d;
             font-size: 1.9rem;
@@ -17,7 +17,7 @@
             margin-bottom: 1.87rem;
         }
         & p:nth-child(2){
-            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-family: $fontPrincipal;
             font-weight: bold;
             color: #3e3d3d;
             font-size: 0.9rem;
@@ -25,7 +25,7 @@
             margin-bottom: 0.63rem;
         }
         & p:nth-child(3){
-            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-family:$fontPrincipal;
             color: #7e7d7d;
         }
     }
@@ -53,28 +53,28 @@
                 display: flex;
                 justify-content: center;
                 align-items: center;
-                font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif ;
+                font-family: $fontPrincipal;
                 font-weight: bold;
                 margin-top: 1.87rem;
                 color: #ffff;
             }
             & p:nth-child(2){
                 color: #ffff;
-                font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+                font-family: $fontPrincipal;
                 font-size: 1.4rem;
                 line-height: 0px;
                 margin-bottom: 1.24rem;
                 margin-top: 1rem;
             }
             & p:nth-child(3){
-                font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+                font-family: $fontPrincipal;
                 text-align: center;
                 width: 14.3rem;
                 margin-bottom: 1.25rem;
                 color: #8f8f8f;
             }
             & button{
-                background-color: #09857e;
+                background-color: $colorPrincipal;
                 border: 0.5px solid #ffff;
                 outline: none;
                 border-radius:0.31rem ;
@@ -85,7 +85,7 @@
                 &:hover{
                     cursor: pointer;
                     color: #fff;
-                    border:2px solid #09857e;
+                    border:2px solid $colorPrincipal;
                     background-color: black;
                 }
                 &:active{
@@ -94,126 +94,10 @@
             }
         }
         .cajaDos{
-            width:15.75rem;
-            height: 17rem;
-            background-repeat: no-repeat;
-            background-size: cover;
-            box-shadow: 4px 4px 15px rgba(0,0,0,0.8);
-            background-color: black;
-            border: 2.5px solid #ffffff;
-            border-radius: 1.25rem;
-            display: flex;
-            align-items: center;
-            flex-direction: column;
-            & span{
-                width: 2.5rem;
-                height: 2.5rem;
-                border-radius: 50%;
-                border: 0.5px solid #ffff;
-                background-color: rgb(75, 71, 71);
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif ;
-                font-weight: bold;
-                margin-top: 1.87rem;
-                color: #ffff;
-            }
-            & p:nth-child(2){
-                color: #ffff;
-                font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-                font-size: 1.4rem;
-                line-height: 0px;
-                margin-bottom: 1.24rem;
-                margin-top: 1rem;
-            }
-            & p:nth-child(3){
-                font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-                text-align: center;
-                width: 14.3rem;
-                margin-bottom: 1.25rem;
-                color: #8f8f8f;
-            }
-            & button{
-                background-color: #09857e;
-                border: 0.5px solid #ffff;
-                outline: none;
-                border-radius:0.31rem ;
-                padding: 0.5rem;
-                position: relative;
-                bottom: 0.31rem;
-                color: #ffff;
-                &:hover{
-                    cursor: pointer;
-                    color: #fff;
-                    border:2px solid #09857e;
-                    background-color: black;;
-                }
-                &:active{
-                    transform: scale(1.1);
-                }
-            }
+            @extend .cajaUno;
         }
         .cajaTres{
-            width:15.75rem;
-            height: 17rem;
-            background-repeat: no-repeat;
-            background-size: cover;
-            box-shadow: 4px 4px 15px rgba(0,0,0,0.8);
-            background-color: black;
-            border: 2.5px solid #ffffff;
-            border-radius: 1.25rem;
-            display: flex;
-            align-items: center;
-            flex-direction: column;
-            & span{
-                width: 2.5rem;
-                height: 2.5rem;
-                border-radius: 50%;
-                border: 0.5px solid #ffff;
-                background-color: rgb(75, 71, 71);
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif ;
-                font-weight: bold;
-                margin-top: 1.87rem;
-                color: #ffff;
-            }
-            & p:nth-child(2){
-                color: #ffff;
-                font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-                font-size: 1.4rem;
-                line-height: 0px;
-                margin-bottom: 1.24rem;
-                margin-top: 1rem;
-            }
-            & p:nth-child(3){
-                font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-                text-align: center;
-                width: 14.3rem;
-                margin-bottom: 1.25rem;
-                color: #8f8f8f;
-            }
-            & button{
-                background-color: #09857e;
-                border: 0.5px solid #ffff;
-                outline: none;
-                border-radius:0.31rem ;
-                padding: 0.5rem;
-                position: relative;
-                bottom: 0.31rem;
-                color: #ffff;
-                &:hover{
-                    cursor: pointer;
-                    color: #fff;
-                    border:2px solid #09857e;
-                    background-color: black;
-                }
-                &:active{
-                    transform: scale(1.1);
-                }
-            }
-        }
+            @extend .cajaUno;
+    }
     }
 }

@@ -6,16 +6,48 @@
 
 html {
   scroll-behavior: smooth; }
+  html::-webkit-scrollbar {
+    width: 7px; }
+  html::-webkit-scrollbar-thumb {
+    background-color: #09857e;
+    border-radius: 5px; }
+
+.navbar {
+  box-shadow: 0px 2px 12px rgba(0, 0, 0, 0.2);
+  position: absolute; }
+  .navbar .container-fluid .navbar-brand {
+    font-size: 1.6rem;
+    font-weight: 700; }
+  .navbar .container-fluid .navbar-toggler {
+    color: #09857e; }
+  .navbar .container-fluid .offcanvas .offcanvas-header {
+    background-color: #f6f5f5;
+    box-shadow: 0px 2px 12px rgba(0, 0, 0, 0.2); }
+    .navbar .container-fluid .offcanvas .offcanvas-header .offcanvas-title {
+      font-size: 1.6rem;
+      font-weight: 700; }
+  .navbar .container-fluid .offcanvas .offcanvas-body .navbar-nav .nav-item {
+    height: fit-content;
+    width: fit-content; }
+    .navbar .container-fluid .offcanvas .offcanvas-body .navbar-nav .nav-item :active {
+      transform: scale(1.1); }
+    .navbar .container-fluid .offcanvas .offcanvas-body .navbar-nav .nav-item :hover {
+      background-color: #09857e;
+      height: fit-content;
+      width: fit-content;
+      border-radius: 5px;
+      padding-left: 5px;
+      padding-right: 8px; }
+  .navbar .container-fluid .offcanvas .offcanvas-body .imagen-nav {
+    display: flex;
+    justify-content: center;
+    margin-top: 5%;
+    opacity: 0.4; }
 
 /*Estilos del Body*/
 .bodyInicio {
   background-image: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%);
   overflow-x: hidden; }
-  .bodyInicio::-webkit-scrollbar {
-    width: 7px; }
-  .bodyInicio::-webkit-scrollbar-thumb {
-    background-color: #09857e;
-    border-radius: 5px; }
 
 /*Contenedor Inicio*/
 /*Menú*/
@@ -50,29 +82,29 @@ html {
     margin-left: 3.12rem;
     margin-bottom: 10%; }
     .principalInicio .textContainer h3:nth-child(1) {
-      font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+      font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
       font-weight: bold;
       color: #6d6d6d;
       font-size: 1.6rem; }
     .principalInicio .textContainer h1:nth-child(2) {
-      font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+      font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
       font-weight: bold;
       letter-spacing: 1px;
       color: #1a1a1a;
       font-size: 2.5rem; }
     .principalInicio .textContainer h3:nth-child(3) {
-      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+      font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
       color: #403e3e;
       font-size: 1.8rem; }
     .principalInicio .textContainer h3:nth-child(4) {
-      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+      font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
       color: #535151;
       font-size: 1.5rem; }
     .principalInicio .textContainer button {
       width: 8.2rem;
       height: 2.6rem;
       border-radius: 0.8rem;
-      font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+      font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
       font-weight: bold;
       font-size: 0.9rem;
       outline: none;
@@ -113,7 +145,7 @@ html {
     width: 35.3rem; }
     .sobreContainer .sobreText p:nth-child(1) {
       color: #403e3e;
-      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+      font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
       font-weight: bold;
       font-size: 1.6rem;
       line-height: 0px;
@@ -121,13 +153,13 @@ html {
     .sobreContainer .sobreText p:nth-child(2) {
       color: #09857e;
       font-size: 1rem;
-      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+      font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
       font-weight: bold;
       line-height: 0.32rem;
       margin-bottom: 2.5rem; }
     .sobreContainer .sobreText p:nth-child(3), .sobreContainer .sobreText p:nth-child(4) {
       color: #7e7d7d;
-      font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+      font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
       font-size: 1rem;
       position: relative;
       bottom: 1.56rem; }
@@ -150,12 +182,8 @@ html {
 
 .bodySobremi {
   background-color: #f1ebeb;
-  overflow-x: hidden; }
-  .bodySobremi::-webkit-scrollbar {
-    width: 7px; }
-  .bodySobremi::-webkit-scrollbar-thumb {
-    background-color: #09857e;
-    border-radius: 5px; }
+  overflow-x: hidden;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif; }
 
 .sobreMi {
   width: 100%;
@@ -226,7 +254,8 @@ html {
           .sobreMi .contenidoSobremi .textSobremi .social .porfolio:hover {
             color: black;
             border: 2px solid #09857e;
-            background-color: #fff; }
+            background-color: #fff;
+            transition: all ease 0.5s; }
           .sobreMi .contenidoSobremi .textSobremi .social .porfolio:active {
             transform: scale(1.1); }
 
@@ -241,26 +270,26 @@ html {
     flex-direction: column;
     margin-bottom: 1.8rem; }
     .servicios .serviciosText p:nth-child(1) {
-      font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+      font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
       font-weight: bold;
       color: #3e3d3d;
       font-size: 1.9rem;
       line-height: 0px;
       margin-bottom: 1.87rem; }
     .servicios .serviciosText p:nth-child(2) {
-      font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+      font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
       font-weight: bold;
       color: #3e3d3d;
       font-size: 0.9rem;
       line-height: 5px;
       margin-bottom: 0.63rem; }
     .servicios .serviciosText p:nth-child(3) {
-      font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+      font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
       color: #7e7d7d; }
   .servicios .cajaContainer {
     display: flex;
     justify-content: space-evenly; }
-    .servicios .cajaContainer .cajaUno {
+    .servicios .cajaContainer .cajaUno, .servicios .cajaContainer .cajaDos, .servicios .cajaContainer .cajaTres {
       width: 15.75rem;
       height: 17rem;
       background-repeat: no-repeat;
@@ -272,7 +301,7 @@ html {
       display: flex;
       align-items: center;
       flex-direction: column; }
-      .servicios .cajaContainer .cajaUno span {
+      .servicios .cajaContainer .cajaUno span, .servicios .cajaContainer .cajaDos span, .servicios .cajaContainer .cajaTres span {
         width: 2.5rem;
         height: 2.5rem;
         border-radius: 50%;
@@ -281,24 +310,24 @@ html {
         display: flex;
         justify-content: center;
         align-items: center;
-        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
         font-weight: bold;
         margin-top: 1.87rem;
         color: #ffff; }
-      .servicios .cajaContainer .cajaUno p:nth-child(2) {
+      .servicios .cajaContainer .cajaUno p:nth-child(2), .servicios .cajaContainer .cajaDos p:nth-child(2), .servicios .cajaContainer .cajaTres p:nth-child(2) {
         color: #ffff;
-        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
         font-size: 1.4rem;
         line-height: 0px;
         margin-bottom: 1.24rem;
         margin-top: 1rem; }
-      .servicios .cajaContainer .cajaUno p:nth-child(3) {
-        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+      .servicios .cajaContainer .cajaUno p:nth-child(3), .servicios .cajaContainer .cajaDos p:nth-child(3), .servicios .cajaContainer .cajaTres p:nth-child(3) {
+        font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
         text-align: center;
         width: 14.3rem;
         margin-bottom: 1.25rem;
         color: #8f8f8f; }
-      .servicios .cajaContainer .cajaUno button {
+      .servicios .cajaContainer .cajaUno button, .servicios .cajaContainer .cajaDos button, .servicios .cajaContainer .cajaTres button {
         background-color: #09857e;
         border: 0.5px solid #ffff;
         outline: none;
@@ -307,124 +336,17 @@ html {
         position: relative;
         bottom: 0.31rem;
         color: #ffff; }
-        .servicios .cajaContainer .cajaUno button:hover {
+        .servicios .cajaContainer .cajaUno button:hover, .servicios .cajaContainer .cajaDos button:hover, .servicios .cajaContainer .cajaTres button:hover {
           cursor: pointer;
           color: #fff;
           border: 2px solid #09857e;
           background-color: black; }
-        .servicios .cajaContainer .cajaUno button:active {
-          transform: scale(1.1); }
-    .servicios .cajaContainer .cajaDos {
-      width: 15.75rem;
-      height: 17rem;
-      background-repeat: no-repeat;
-      background-size: cover;
-      box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.8);
-      background-color: black;
-      border: 2.5px solid #ffffff;
-      border-radius: 1.25rem;
-      display: flex;
-      align-items: center;
-      flex-direction: column; }
-      .servicios .cajaContainer .cajaDos span {
-        width: 2.5rem;
-        height: 2.5rem;
-        border-radius: 50%;
-        border: 0.5px solid #ffff;
-        background-color: #4b4747;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-        font-weight: bold;
-        margin-top: 1.87rem;
-        color: #ffff; }
-      .servicios .cajaContainer .cajaDos p:nth-child(2) {
-        color: #ffff;
-        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-        font-size: 1.4rem;
-        line-height: 0px;
-        margin-bottom: 1.24rem;
-        margin-top: 1rem; }
-      .servicios .cajaContainer .cajaDos p:nth-child(3) {
-        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-        text-align: center;
-        width: 14.3rem;
-        margin-bottom: 1.25rem;
-        color: #8f8f8f; }
-      .servicios .cajaContainer .cajaDos button {
-        background-color: #09857e;
-        border: 0.5px solid #ffff;
-        outline: none;
-        border-radius: 0.31rem;
-        padding: 0.5rem;
-        position: relative;
-        bottom: 0.31rem;
-        color: #ffff; }
-        .servicios .cajaContainer .cajaDos button:hover {
-          cursor: pointer;
-          color: #fff;
-          border: 2px solid #09857e;
-          background-color: black; }
-        .servicios .cajaContainer .cajaDos button:active {
-          transform: scale(1.1); }
-    .servicios .cajaContainer .cajaTres {
-      width: 15.75rem;
-      height: 17rem;
-      background-repeat: no-repeat;
-      background-size: cover;
-      box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.8);
-      background-color: black;
-      border: 2.5px solid #ffffff;
-      border-radius: 1.25rem;
-      display: flex;
-      align-items: center;
-      flex-direction: column; }
-      .servicios .cajaContainer .cajaTres span {
-        width: 2.5rem;
-        height: 2.5rem;
-        border-radius: 50%;
-        border: 0.5px solid #ffff;
-        background-color: #4b4747;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-        font-weight: bold;
-        margin-top: 1.87rem;
-        color: #ffff; }
-      .servicios .cajaContainer .cajaTres p:nth-child(2) {
-        color: #ffff;
-        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-        font-size: 1.4rem;
-        line-height: 0px;
-        margin-bottom: 1.24rem;
-        margin-top: 1rem; }
-      .servicios .cajaContainer .cajaTres p:nth-child(3) {
-        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-        text-align: center;
-        width: 14.3rem;
-        margin-bottom: 1.25rem;
-        color: #8f8f8f; }
-      .servicios .cajaContainer .cajaTres button {
-        background-color: #09857e;
-        border: 0.5px solid #ffff;
-        outline: none;
-        border-radius: 0.31rem;
-        padding: 0.5rem;
-        position: relative;
-        bottom: 0.31rem;
-        color: #ffff; }
-        .servicios .cajaContainer .cajaTres button:hover {
-          cursor: pointer;
-          color: #fff;
-          border: 2px solid #09857e;
-          background-color: black; }
-        .servicios .cajaContainer .cajaTres button:active {
+        .servicios .cajaContainer .cajaUno button:active, .servicios .cajaContainer .cajaDos button:active, .servicios .cajaContainer .cajaTres button:active {
           transform: scale(1.1); }
 
 .bodyDisenio {
-  background-color: #36a7a1; }
+  background-color: #36a7a1;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif; }
   .bodyDisenio::-webkit-scrollbar {
     width: 7px; }
   .bodyDisenio::-webkit-scrollbar-thumb {
@@ -470,7 +392,8 @@ html {
       max-width: 100%; }
 
 .bodyProgramador {
-  background-color: #36a7a1; }
+  background-color: #36a7a1;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif; }
   .bodyProgramador::-webkit-scrollbar {
     width: 7px; }
   .bodyProgramador::-webkit-scrollbar-thumb {
@@ -516,7 +439,8 @@ html {
       max-width: 100%; }
 
 .bodyMantenimiento {
-  background-color: #36a7a1; }
+  background-color: #36a7a1;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif; }
   .bodyMantenimiento::-webkit-scrollbar {
     width: 7px; }
   .bodyMantenimiento::-webkit-scrollbar-thumb {
@@ -574,7 +498,7 @@ html {
   .contacto p {
     color: #ffff;
     font-size: 1.8rem;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
     font-weight: bold;
     border-bottom: 2px solid #ffff; }
   .contacto button {
@@ -599,7 +523,7 @@ html {
 .bodyContacto {
   background-image: linear-gradient(to top, #d5d4d0 0%, #d5d4d0 1%, #eeeeec 31%, #efeeec 75%, #e9e9e7 100%);
   line-height: 1.6;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   padding: 0 1.5em;
   height: 100vh; }
   .bodyContacto::-webkit-scrollbar {
@@ -686,7 +610,7 @@ footer {
   justify-content: center;
   background-image: linear-gradient(to top, #d5d4d0 0%, #d5d4d0 1%, #eeeeec 31%, #efeeec 75%, #e9e9e7 100%); }
   footer p {
-    font-family: calibri; }
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif; }
   footer p:nth-child(1) {
     font-size: 2.3rem;
     font-weight: bold;
@@ -728,152 +652,10 @@ footer {
     bottom: 10px;
     transform: translateX(-50%); }
 
-/*Media Queries Movil*/
-@media screen and (max-width: 480px) {
-  .principalInicio .model {
-    position: relative;
-    right: 30px; }
-  .principalInicio .textContainer {
-    margin-left: 30px;
-    margin-right: 20px;
-    padding: 0px;
-    position: relative;
-    bottom: 60px; }
-    .principalInicio .textContainer h3:nth-child(1) {
-      font-size: 20px; }
-    .principalInicio .textContainer h1:nth-child(2) {
-      font-size: 25px; }
-    .principalInicio .textContainer h3:nth-child(3) {
-      font-size: 15px; }
-    .principalInicio .textContainer h3:nth-child(4) {
-      font-size: 15px; }
-  .sobreContainer {
-    height: 350px;
-    width: 100%; }
-    .sobreContainer .sobreTextp:nth-child(1) {
-      font-size: 20px; }
-    .sobreContainer .sobreText p:nth-child(2) {
-      font-size: 15px; }
-    .sobreContainer .sobreText p:nth-child(3) {
-      font-size: 12px; }
-    .sobreContainer .sobreText p:nth-child(4) {
-      font-size: 12px; }
-    .sobreContainer img {
-      margin-bottom: 30px;
-      margin-right: 10px;
-      margin-left: 10px; }
-  .servicios {
-    display: flex;
-    flex-direction: column;
-    justify-content: center; }
-    .servicios .serviciosText p:nth-child(2) {
-      display: none; }
-    .servicios .serviciosText p:nth-child(3) {
-      display: none; }
-    .servicios .cajaCointaner .cajaUno {
-      height: 160px;
-      width: 300px; }
-      .servicios .cajaCointaner .cajaUno span {
-        display: none; }
-      .servicios .cajaCointaner .cajaUno p:nth-child(2) {
-        margin-top: 30px;
-        font-size: 13px; }
-      .servicios .cajaCointaner .cajaUno p:nth-child(3) {
-        display: none; }
-      .servicios .cajaCointaner .cajaUno button {
-        height: 50px;
-        width: 50px;
-        margin-top: 20px;
-        font-size: 10px; }
-    .servicios .cajaCointaner .cajaDos {
-      height: 160px;
-      width: 300px; }
-      .servicios .cajaCointaner .cajaDos span {
-        display: none; }
-      .servicios .cajaCointaner .cajaDos p:nth-child(2) {
-        margin-top: 30px;
-        font-size: 13px; }
-      .servicios .cajaCointaner .cajaDos p:nth-child(3) {
-        display: none; }
-      .servicios .cajaCointaner .cajaDos button {
-        height: 50px;
-        width: 50px;
-        margin-top: 20px;
-        font-size: 10px; }
-    .servicios .cajaCointaner .cajaTres {
-      height: 160px;
-      width: 300px; }
-      .servicios .cajaCointaner .cajaTres span {
-        display: none; }
-      .servicios .cajaCointaner .cajaTres p:nth-child(2) {
-        margin-top: 30px;
-        font-size: 13px; }
-      .servicios .cajaCointaner .cajaTres p:nth-child(3) {
-        display: none; }
-      .servicios .cajaCointaner .cajaTres button {
-        height: 50px;
-        width: 50px;
-        margin-top: 20px;
-        font-size: 10px; }
-  .contacto p {
-    font-size: 25px; }
-  footer p:nth-child(2) {
-    font-size: 10px; } }
-
-/*Media Queries Tablet*/
-.principalInicio .textContainer {
-  margin-top: 60px; }
-  .principalInicio .textContainer .textContainer h3:nth-child(1) {
-    font-size: 20px; }
-  .principalInicio .textContainer .textContainer h1:nth-child(2) {
-    font-size: 25px; }
-  .principalInicio .textContainer .textContainer h3:nth-child(3) {
-    font-size: 15px; }
-  .principalInicio .textContainer .textContainer h3:nth-child(4) {
-    font-size: 15px; }
-
-.principalInicio .sobreContainer {
-  height: 350px;
-  width: 100%; }
-
-.principalInicio .servicios {
-  display: flex;
-  flex-direction: column;
-  justify-content: center; }
-  .principalInicio .servicios .cajaCointaner .cajaUno p:nth-child(3), .principalInicio .servicios .cajaCointaner .cajaDos p:nth-child(3), .principalInicio .servicios .cajaCointaner .cajaTres p:nth-child(3) {
-    display: none; }
-  .principalInicio .servicios .cajaCointaner .cajaUno, .principalInicio .servicios .cajaCointaner .cajaDos, .principalInicio .servicios .cajaCointaner .cajaTres {
-    height: 160px;
-    width: 300px; }
-  .principalInicio .servicios .cajaCointaner .cajaUno span, .principalInicio .servicios .cajaCointaner .cajaDos span, .principalInicio .servicios .cajaCointaner .cajaTres span {
-    display: none; }
-  .principalInicio .servicios .cajaCointaner .cajaUno p:nth-child(2), .principalInicio .servicios .cajaCointaner .cajaDos p:nth-child(2), .principalInicio .servicios .cajaCointaner .cajaTres p:nth-child(2) {
-    margin-top: 30px;
-    font-size: 13px; }
-  .principalInicio .servicios .cajaCointaner .cajaUno button, .principalInicio .servicios .cajaCointaner .cajaDos button, .principalInicio .servicios .cajaCointaner .cajaTres button {
-    height: 50px;
-    width: 50px;
-    margin-top: 20px;
-    font-size: 10px; }
-
-/*Media Queries Contacto*/
-@media (min-width: 700px) {
-  .bodyContacto {
-    padding: 0 4em; }
-  .contact-wrapper {
-    display: grid;
-    grid-template-columns: 2fr 1fr; }
-  .contact-wrapper > * {
-    padding: 2em; }
-  .contact-info h4,
-  .contact-info ul,
-  .contact-info p {
-    text-align: left; } }
-
 .bodyContacto {
   background-image: linear-gradient(to top, #d5d4d0 0%, #d5d4d0 1%, #eeeeec 31%, #efeeec 75%, #e9e9e7 100%);
   line-height: 1.6;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   padding: 0 1.5em;
   height: 100vh; }
   .bodyContacto::-webkit-scrollbar {
@@ -952,34 +734,144 @@ footer {
         justify-content: center;
         margin-top: 50px; }
 
-.contenedorInicio .navbar {
-  box-shadow: 0px 2px 12px rgba(0, 0, 0, 0.2);
-  position: absolute; }
-  .contenedorInicio .navbar .container-fluid .navbar-brand {
-    font-size: 1.6rem;
-    font-weight: 700; }
-  .contenedorInicio .navbar .container-fluid .navbar-toggler {
-    color: #09857e; }
-  .contenedorInicio .navbar .container-fluid .offcanvas .offcanvas-header {
-    background-color: #f6f5f5;
-    box-shadow: 0px 2px 12px rgba(0, 0, 0, 0.2); }
-    .contenedorInicio .navbar .container-fluid .offcanvas .offcanvas-header .offcanvas-title {
-      font-size: 1.6rem;
-      font-weight: 700; }
-  .contenedorInicio .navbar .container-fluid .offcanvas .offcanvas-body .navbar-nav .nav-item {
-    height: fit-content;
-    width: fit-content; }
-    .contenedorInicio .navbar .container-fluid .offcanvas .offcanvas-body .navbar-nav .nav-item :active {
-      transform: scale(1.1); }
-    .contenedorInicio .navbar .container-fluid .offcanvas .offcanvas-body .navbar-nav .nav-item :hover {
-      background-color: #09857e;
-      height: fit-content;
-      width: fit-content;
-      border-radius: 5px;
-      padding-left: 5px;
-      padding-right: 8px; }
-  .contenedorInicio .navbar .container-fluid .offcanvas .offcanvas-body .imagen-nav {
+/*Media Queries Movil*/
+@media screen and (max-width: 480px) {
+  .principalInicio .model {
+    position: relative;
+    right: 30px; }
+  .principalInicio .textContainer {
+    margin-left: 30px;
+    margin-right: 20px;
+    padding: 0px;
+    position: relative;
+    bottom: 60px; }
+    .principalInicio .textContainer h3:nth-child(1) {
+      font-size: 20px; }
+    .principalInicio .textContainer h1:nth-child(2) {
+      font-size: 25px; }
+    .principalInicio .textContainer h3:nth-child(3) {
+      font-size: 15px; }
+    .principalInicio .textContainer h3:nth-child(4) {
+      font-size: 15px; }
+  .sobreContainer {
+    height: 350px;
+    width: 100%; }
+    .sobreContainer .sobreTextp:nth-child(1) {
+      font-size: 20px; }
+    .sobreContainer .sobreText p:nth-child(2) {
+      font-size: 15px; }
+    .sobreContainer .sobreText p:nth-child(3) {
+      font-size: 12px; }
+    .sobreContainer .sobreText p:nth-child(4) {
+      font-size: 12px; }
+    .sobreContainer img {
+      margin-bottom: 30px;
+      margin-right: 10px;
+      margin-left: 10px; }
+  .servicios {
     display: flex;
-    justify-content: center;
-    margin-top: 5%;
-    opacity: 0.4; }
+    flex-direction: column;
+    justify-content: center; }
+    .servicios .serviciosText p:nth-child(2) {
+      display: none; }
+    .servicios .serviciosText p:nth-child(3) {
+      display: none; }
+    .servicios .cajaCointaner .cajaUno, .servicios .cajaCointaner .cajaContainer .cajaDos, .servicios .cajaContainer .cajaCointaner .cajaDos, .servicios .cajaCointaner .cajaContainer .cajaTres, .servicios .cajaContainer .cajaCointaner .cajaTres {
+      height: 160px;
+      width: 300px; }
+      .servicios .cajaCointaner .cajaUno span, .servicios .cajaCointaner .cajaContainer .cajaDos span, .servicios .cajaContainer .cajaCointaner .cajaDos span, .servicios .cajaCointaner .cajaContainer .cajaTres span, .servicios .cajaContainer .cajaCointaner .cajaTres span {
+        display: none; }
+      .servicios .cajaCointaner .cajaUno p:nth-child(2), .servicios .cajaCointaner .cajaContainer .cajaDos p:nth-child(2), .servicios .cajaContainer .cajaCointaner .cajaDos p:nth-child(2), .servicios .cajaCointaner .cajaContainer .cajaTres p:nth-child(2), .servicios .cajaContainer .cajaCointaner .cajaTres p:nth-child(2) {
+        margin-top: 30px;
+        font-size: 13px; }
+      .servicios .cajaCointaner .cajaUno p:nth-child(3), .servicios .cajaCointaner .cajaContainer .cajaDos p:nth-child(3), .servicios .cajaContainer .cajaCointaner .cajaDos p:nth-child(3), .servicios .cajaCointaner .cajaContainer .cajaTres p:nth-child(3), .servicios .cajaContainer .cajaCointaner .cajaTres p:nth-child(3) {
+        display: none; }
+      .servicios .cajaCointaner .cajaUno button, .servicios .cajaCointaner .cajaContainer .cajaDos button, .servicios .cajaContainer .cajaCointaner .cajaDos button, .servicios .cajaCointaner .cajaContainer .cajaTres button, .servicios .cajaContainer .cajaCointaner .cajaTres button {
+        height: 50px;
+        width: 50px;
+        margin-top: 20px;
+        font-size: 10px; }
+    .servicios .cajaCointaner .cajaDos {
+      height: 160px;
+      width: 300px; }
+      .servicios .cajaCointaner .cajaDos span {
+        display: none; }
+      .servicios .cajaCointaner .cajaDos p:nth-child(2) {
+        margin-top: 30px;
+        font-size: 13px; }
+      .servicios .cajaCointaner .cajaDos p:nth-child(3) {
+        display: none; }
+      .servicios .cajaCointaner .cajaDos button {
+        height: 50px;
+        width: 50px;
+        margin-top: 20px;
+        font-size: 10px; }
+    .servicios .cajaCointaner .cajaTres {
+      height: 160px;
+      width: 300px; }
+      .servicios .cajaCointaner .cajaTres span {
+        display: none; }
+      .servicios .cajaCointaner .cajaTres p:nth-child(2) {
+        margin-top: 30px;
+        font-size: 13px; }
+      .servicios .cajaCointaner .cajaTres p:nth-child(3) {
+        display: none; }
+      .servicios .cajaCointaner .cajaTres button {
+        height: 50px;
+        width: 50px;
+        margin-top: 20px;
+        font-size: 10px; }
+  .contacto p {
+    font-size: 25px; }
+  footer p:nth-child(2) {
+    font-size: 10px; } }
+
+/*Media Queries Tablet*/
+.principalInicio .textContainer {
+  margin-top: 60px; }
+  .principalInicio .textContainer .textContainer h3:nth-child(1) {
+    font-size: 20px; }
+  .principalInicio .textContainer .textContainer h1:nth-child(2) {
+    font-size: 25px; }
+  .principalInicio .textContainer .textContainer h3:nth-child(3) {
+    font-size: 15px; }
+  .principalInicio .textContainer .textContainer h3:nth-child(4) {
+    font-size: 15px; }
+
+.principalInicio .sobreContainer {
+  height: 350px;
+  width: 100%; }
+
+.principalInicio .servicios {
+  display: flex;
+  flex-direction: column;
+  justify-content: center; }
+  .principalInicio .servicios .cajaCointaner .cajaUno p:nth-child(3), .principalInicio .servicios .cajaCointaner .cajaContainer .cajaDos p:nth-child(3), .principalInicio .servicios .cajaContainer .cajaCointaner .cajaDos p:nth-child(3), .principalInicio .servicios .cajaCointaner .cajaContainer .cajaTres p:nth-child(3), .principalInicio .servicios .cajaContainer .cajaCointaner .cajaTres p:nth-child(3), .principalInicio .servicios .cajaCointaner .cajaDos p:nth-child(3), .principalInicio .servicios .cajaCointaner .cajaTres p:nth-child(3) {
+    display: none; }
+  .principalInicio .servicios .cajaCointaner .cajaUno, .principalInicio .servicios .cajaCointaner .cajaContainer .cajaDos, .principalInicio .servicios .cajaContainer .cajaCointaner .cajaDos, .principalInicio .servicios .cajaCointaner .cajaContainer .cajaTres, .principalInicio .servicios .cajaContainer .cajaCointaner .cajaTres, .principalInicio .servicios .cajaCointaner .cajaDos, .principalInicio .servicios .cajaCointaner .cajaTres {
+    height: 160px;
+    width: 300px; }
+  .principalInicio .servicios .cajaCointaner .cajaUno span, .principalInicio .servicios .cajaCointaner .cajaContainer .cajaDos span, .principalInicio .servicios .cajaContainer .cajaCointaner .cajaDos span, .principalInicio .servicios .cajaCointaner .cajaContainer .cajaTres span, .principalInicio .servicios .cajaContainer .cajaCointaner .cajaTres span, .principalInicio .servicios .cajaCointaner .cajaDos span, .principalInicio .servicios .cajaCointaner .cajaTres span {
+    display: none; }
+  .principalInicio .servicios .cajaCointaner .cajaUno p:nth-child(2), .principalInicio .servicios .cajaCointaner .cajaContainer .cajaDos p:nth-child(2), .principalInicio .servicios .cajaContainer .cajaCointaner .cajaDos p:nth-child(2), .principalInicio .servicios .cajaCointaner .cajaContainer .cajaTres p:nth-child(2), .principalInicio .servicios .cajaContainer .cajaCointaner .cajaTres p:nth-child(2), .principalInicio .servicios .cajaCointaner .cajaDos p:nth-child(2), .principalInicio .servicios .cajaCointaner .cajaTres p:nth-child(2) {
+    margin-top: 30px;
+    font-size: 13px; }
+  .principalInicio .servicios .cajaCointaner .cajaUno button, .principalInicio .servicios .cajaCointaner .cajaContainer .cajaDos button, .principalInicio .servicios .cajaContainer .cajaCointaner .cajaDos button, .principalInicio .servicios .cajaCointaner .cajaContainer .cajaTres button, .principalInicio .servicios .cajaContainer .cajaCointaner .cajaTres button, .principalInicio .servicios .cajaCointaner .cajaDos button, .principalInicio .servicios .cajaCointaner .cajaTres button {
+    height: 50px;
+    width: 50px;
+    margin-top: 20px;
+    font-size: 10px; }
+
+/*Media Queries Contacto*/
+@media (min-width: 700px) {
+  .bodyContacto {
+    padding: 0 4em; }
+  .contact-wrapper {
+    display: grid;
+    grid-template-columns: 2fr 1fr; }
+  .contact-wrapper > * {
+    padding: 2em; }
+  .contact-info h4,
+  .contact-info ul,
+  .contact-info p {
+    text-align: left; } }

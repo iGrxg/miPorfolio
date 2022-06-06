@@ -7,23 +7,15 @@
 
 html{
     scroll-behavior: smooth;
+    &::-webkit-scrollbar{
+        width: 7px;
+    }    
+    &::-webkit-scrollbar-thumb{
+        background-color: #09857e ;
+        border-radius: 5px;
+    }
 }
 
-@import "inicio";
-@import "sobremi";
-@import "sobremiPage";
-@import "servicios";
-@import "disenio";
-@import "programador";
-@import "mantenimiento";
-@import "contacto";
-@import "contactoPage";
-@import "footer";
-@import "medias";
-@import "contactoPage";
-
-
-.contenedorInicio{
     .navbar{
         box-shadow: 0px 2px 12px rgba(0,0,0,0.2);
         position: absolute;
@@ -72,4 +64,22 @@ html{
             }
         }
     }
-}
+
+
+@import "utilities/variables";
+@import "utilities/mixins";
+@import "inicio";
+@import "sobremi";
+@import "sobremiPage";
+@import "servicios";
+@import "disenio";
+@import "programador";
+@import "mantenimiento";
+@import "contacto";
+@import "contactoPage";
+@import "footer";
+@import "contactoPage";
+@import "mediaqueries";
+
+
+

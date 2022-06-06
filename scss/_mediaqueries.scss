@@ -54,9 +54,7 @@
         }           
     }
     .servicios{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
+        @include flex (flex, column, center);
         .serviciosText{
             & p:nth-child(2){
                 display: none;
@@ -175,8 +173,7 @@
             .cajaUno p:nth-child(3), .cajaDos p:nth-child(3), .cajaTres p:nth-child(3){
                 display: none;
             }
-               
-            
+
             .cajaUno, .cajaDos, .cajaTres{
                 height: 160px;
                 width: 300px;
@@ -186,12 +183,11 @@
             .cajaUno span, .cajaDos span, .cajaTres span{
                 display: none;
             }
-        
+       
             .cajaUno p:nth-child(2), .cajaDos p:nth-child(2), .cajaTres p:nth-child(2){
                 margin-top: 30px;
                 font-size: 13px;
-            }
-        
+            }       
             .cajaUno button, .cajaDos button, .cajaTres button{
                 height: 50px;
                 width: 50px;
