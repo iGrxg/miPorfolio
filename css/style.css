@@ -157,13 +157,13 @@ html {
       font-weight: bold;
       line-height: 0.32rem;
       margin-bottom: 2.5rem; }
-    .sobreContainer .sobreText p:nth-child(3), .sobreContainer .sobreText p:nth-child(4) {
+    .sobreContainer .sobreText p:nth-child(3) {
       color: #7e7d7d;
       font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
       font-size: 1rem;
       position: relative;
       bottom: 1.56rem; }
-      .sobreContainer .sobreText p:nth-child(3) span, .sobreContainer .sobreText p:nth-child(4) span {
+      .sobreContainer .sobreText p:nth-child(3) span {
         color: #3e3d3d; }
     .sobreContainer .sobreText .mas-info {
       background-color: #09857e;
@@ -536,7 +536,7 @@ html {
   margin-top: 100px; }
   .content .contact-wrapper {
     box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.3); }
-    .content .contact-wrapper .contact-wrapper > * {
+    .content .contact-wrapper > * {
       padding: 1em; }
     .content .contact-wrapper .contact-form {
       background: #ffff; }
@@ -668,7 +668,7 @@ footer {
   margin-top: 100px; }
   .content .contact-wrapper {
     box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.3); }
-    .content .contact-wrapper .contact-wrapper > * {
+    .content .contact-wrapper > * {
       padding: 1em; }
     .content .contact-wrapper .contact-form {
       background: #ffff; }
@@ -736,38 +736,43 @@ footer {
 
 /*Media Queries Movil*/
 @media screen and (max-width: 480px) {
-  .principalInicio .model {
+  .contendorInicio .principalInicio .model {
     position: relative;
     right: 30px; }
-  .principalInicio .textContainer {
+  .contendorInicio .principalInicio .textContainer {
     margin-left: 30px;
     margin-right: 20px;
     padding: 0px;
     position: relative;
     bottom: 60px; }
-    .principalInicio .textContainer h3:nth-child(1) {
+    .contendorInicio .principalInicio .textContainer h3:nth-child(1) {
       font-size: 20px; }
-    .principalInicio .textContainer h1:nth-child(2) {
+    .contendorInicio .principalInicio .textContainer h1:nth-child(2) {
       font-size: 25px; }
-    .principalInicio .textContainer h3:nth-child(3) {
+    .contendorInicio .principalInicio .textContainer h3:nth-child(3) {
       font-size: 15px; }
-    .principalInicio .textContainer h3:nth-child(4) {
+    .contendorInicio .principalInicio .textContainer h3:nth-child(4) {
       font-size: 15px; }
+    .contendorInicio .principalInicio .textContainer button {
+      width: 6.2rem;
+      height: 1.6rem; }
   .sobreContainer {
     height: 350px;
     width: 100%; }
+    .sobreContainer img {
+      margin-bottom: 30px;
+      margin-right: 10px;
+      margin-left: 10px; }
     .sobreContainer .sobreTextp:nth-child(1) {
       font-size: 20px; }
     .sobreContainer .sobreText p:nth-child(2) {
       font-size: 15px; }
     .sobreContainer .sobreText p:nth-child(3) {
       font-size: 12px; }
-    .sobreContainer .sobreText p:nth-child(4) {
-      font-size: 12px; }
-    .sobreContainer img {
-      margin-bottom: 30px;
-      margin-right: 10px;
-      margin-left: 10px; }
+    .sobreContainer .sobreText button {
+      display: flex;
+      flex-direction: column;
+      justify-content: center; }
   .servicios {
     display: flex;
     flex-direction: column;
@@ -829,13 +834,13 @@ footer {
 /*Media Queries Tablet*/
 .principalInicio .textContainer {
   margin-top: 60px; }
-  .principalInicio .textContainer .textContainer h3:nth-child(1) {
+  .principalInicio .textContainer h3:nth-child(1) {
     font-size: 20px; }
-  .principalInicio .textContainer .textContainer h1:nth-child(2) {
+  .principalInicio .textContainer h1:nth-child(2) {
     font-size: 25px; }
-  .principalInicio .textContainer .textContainer h3:nth-child(3) {
+  .principalInicio .textContainer h3:nth-child(3) {
     font-size: 15px; }
-  .principalInicio .textContainer .textContainer h3:nth-child(4) {
+  .principalInicio .textContainer h3:nth-child(4) {
     font-size: 15px; }
 
 .principalInicio .sobreContainer {
@@ -846,32 +851,62 @@ footer {
   display: flex;
   flex-direction: column;
   justify-content: center; }
-  .principalInicio .servicios .cajaCointaner .cajaUno p:nth-child(3), .principalInicio .servicios .cajaCointaner .cajaContainer .cajaDos p:nth-child(3), .principalInicio .servicios .cajaContainer .cajaCointaner .cajaDos p:nth-child(3), .principalInicio .servicios .cajaCointaner .cajaContainer .cajaTres p:nth-child(3), .principalInicio .servicios .cajaContainer .cajaCointaner .cajaTres p:nth-child(3), .principalInicio .servicios .cajaCointaner .cajaDos p:nth-child(3), .principalInicio .servicios .cajaCointaner .cajaTres p:nth-child(3) {
-    display: none; }
-  .principalInicio .servicios .cajaCointaner .cajaUno, .principalInicio .servicios .cajaCointaner .cajaContainer .cajaDos, .principalInicio .servicios .cajaContainer .cajaCointaner .cajaDos, .principalInicio .servicios .cajaCointaner .cajaContainer .cajaTres, .principalInicio .servicios .cajaContainer .cajaCointaner .cajaTres, .principalInicio .servicios .cajaCointaner .cajaDos, .principalInicio .servicios .cajaCointaner .cajaTres {
+  .principalInicio .servicios .cajaCointaner .cajaUno, .principalInicio .servicios .cajaCointaner .cajaContainer .cajaDos, .principalInicio .servicios .cajaContainer .cajaCointaner .cajaDos, .principalInicio .servicios .cajaCointaner .cajaContainer .cajaTres, .principalInicio .servicios .cajaContainer .cajaCointaner .cajaTres {
     height: 160px;
     width: 300px; }
-  .principalInicio .servicios .cajaCointaner .cajaUno span, .principalInicio .servicios .cajaCointaner .cajaContainer .cajaDos span, .principalInicio .servicios .cajaContainer .cajaCointaner .cajaDos span, .principalInicio .servicios .cajaCointaner .cajaContainer .cajaTres span, .principalInicio .servicios .cajaContainer .cajaCointaner .cajaTres span, .principalInicio .servicios .cajaCointaner .cajaDos span, .principalInicio .servicios .cajaCointaner .cajaTres span {
-    display: none; }
-  .principalInicio .servicios .cajaCointaner .cajaUno p:nth-child(2), .principalInicio .servicios .cajaCointaner .cajaContainer .cajaDos p:nth-child(2), .principalInicio .servicios .cajaContainer .cajaCointaner .cajaDos p:nth-child(2), .principalInicio .servicios .cajaCointaner .cajaContainer .cajaTres p:nth-child(2), .principalInicio .servicios .cajaContainer .cajaCointaner .cajaTres p:nth-child(2), .principalInicio .servicios .cajaCointaner .cajaDos p:nth-child(2), .principalInicio .servicios .cajaCointaner .cajaTres p:nth-child(2) {
-    margin-top: 30px;
-    font-size: 13px; }
-  .principalInicio .servicios .cajaCointaner .cajaUno button, .principalInicio .servicios .cajaCointaner .cajaContainer .cajaDos button, .principalInicio .servicios .cajaContainer .cajaCointaner .cajaDos button, .principalInicio .servicios .cajaCointaner .cajaContainer .cajaTres button, .principalInicio .servicios .cajaContainer .cajaCointaner .cajaTres button, .principalInicio .servicios .cajaCointaner .cajaDos button, .principalInicio .servicios .cajaCointaner .cajaTres button {
-    height: 50px;
-    width: 50px;
-    margin-top: 20px;
-    font-size: 10px; }
+    .principalInicio .servicios .cajaCointaner .cajaUno span, .principalInicio .servicios .cajaCointaner .cajaContainer .cajaDos span, .principalInicio .servicios .cajaContainer .cajaCointaner .cajaDos span, .principalInicio .servicios .cajaCointaner .cajaContainer .cajaTres span, .principalInicio .servicios .cajaContainer .cajaCointaner .cajaTres span {
+      display: none; }
+    .principalInicio .servicios .cajaCointaner .cajaUno p:nth-child(2), .principalInicio .servicios .cajaCointaner .cajaContainer .cajaDos p:nth-child(2), .principalInicio .servicios .cajaContainer .cajaCointaner .cajaDos p:nth-child(2), .principalInicio .servicios .cajaCointaner .cajaContainer .cajaTres p:nth-child(2), .principalInicio .servicios .cajaContainer .cajaCointaner .cajaTres p:nth-child(2) {
+      margin-top: 30px;
+      font-size: 13px; }
+    .principalInicio .servicios .cajaCointaner .cajaUno p:nth-child(3), .principalInicio .servicios .cajaCointaner .cajaContainer .cajaDos p:nth-child(3), .principalInicio .servicios .cajaContainer .cajaCointaner .cajaDos p:nth-child(3), .principalInicio .servicios .cajaCointaner .cajaContainer .cajaTres p:nth-child(3), .principalInicio .servicios .cajaContainer .cajaCointaner .cajaTres p:nth-child(3) {
+      display: none; }
+    .principalInicio .servicios .cajaCointaner .cajaUno button, .principalInicio .servicios .cajaCointaner .cajaContainer .cajaDos button, .principalInicio .servicios .cajaContainer .cajaCointaner .cajaDos button, .principalInicio .servicios .cajaCointaner .cajaContainer .cajaTres button, .principalInicio .servicios .cajaContainer .cajaCointaner .cajaTres button {
+      height: 50px;
+      width: 50px;
+      margin-top: 20px;
+      font-size: 10px; }
+  .principalInicio .servicios .cajaCointaner .cajaDos {
+    height: 160px;
+    width: 300px; }
+    .principalInicio .servicios .cajaCointaner .cajaDos span {
+      display: none; }
+    .principalInicio .servicios .cajaCointaner .cajaDos p:nth-child(2) {
+      margin-top: 30px;
+      font-size: 13px; }
+    .principalInicio .servicios .cajaCointaner .cajaDos p:nth-child(3) {
+      display: none; }
+    .principalInicio .servicios .cajaCointaner .cajaDos button {
+      height: 50px;
+      width: 50px;
+      margin-top: 20px;
+      font-size: 10px; }
+  .principalInicio .servicios .cajaCointaner .cajaTres {
+    height: 160px;
+    width: 300px; }
+    .principalInicio .servicios .cajaCointaner .cajaTres span {
+      display: none; }
+    .principalInicio .servicios .cajaCointaner .cajaTres p:nth-child(2) {
+      margin-top: 30px;
+      font-size: 13px; }
+    .principalInicio .servicios .cajaCointaner .cajaTres p:nth-child(3) {
+      display: none; }
+    .principalInicio .servicios .cajaCointaner .cajaTres button {
+      height: 50px;
+      width: 50px;
+      margin-top: 20px;
+      font-size: 10px; }
 
 /*Media Queries Contacto*/
 @media (min-width: 700px) {
-  .bodyContacto {
-    padding: 0 4em; }
-  .contact-wrapper {
+  .content .contact-wrapper {
     display: grid;
     grid-template-columns: 2fr 1fr; }
-  .contact-wrapper > * {
+  .content > * {
     padding: 2em; }
-  .contact-info h4,
-  .contact-info ul,
-  .contact-info p {
+  .content .contact-info h4 {
+    text-align: left; }
+  .content .contact-info ul {
+    text-align: left; }
+  .content .contact-info p {
     text-align: left; } }
