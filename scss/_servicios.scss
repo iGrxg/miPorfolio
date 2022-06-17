@@ -1,3 +1,4 @@
+
 .servicios{
     height: 37.5rem;
     background-color: #ffff;
@@ -101,3 +102,56 @@
     }
     }
 }
+
+@media screen and ( max-width: 480px ){
+    #servicios{
+        .servicios{
+            .cajaCointaner{
+                display: flex;
+                flex-direction: column;
+            }
+        }
+    }
+}
+
+/*
+@media screen and (max-width: 480px ){
+    #servicios{
+        .servicios{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            .serviciosText{
+                & p:nth-child(2){
+                    display:none;
+                }
+                & p:nth-child(3){
+                    display: none;
+                }
+            }
+            .cajaCointaner{
+                .cajaUno{
+                    height: 160px;
+                    width: 300px;
+                    & span{
+                        display: none;
+                    }
+                    & p:nth-child(2){
+                        margin-top: 30px;
+                        font-size: 13px;
+                    }
+                    & p:nth-child(3){
+                        display: none;
+                    }
+                    & button{
+                        height: 50px;
+                        width: 50px;
+                        margin-top: 20px;
+                        font-size: 10px;
+                    }  
+                }
+            }
+        }
+    }
+}
+*/

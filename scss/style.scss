@@ -1,3 +1,17 @@
+@import "utilities/variables";
+@import "utilities/mixins";
+@import "inicio";
+@import "sobremi";
+@import "sobremiPage";
+@import "servicios";
+@import "disenio";
+@import "programador";
+@import "mantenimiento";
+@import "contacto";
+@import "contactoPage";
+@import "footer";
+@import "contactoPage";
+@import "mediaqueries";
 *{
     padding: 0%;
     margin: 0%;
@@ -66,17 +80,3 @@ html{
     }
 
 
-@import "utilities/variables";
-@import "utilities/mixins";
-@import "inicio";
-@import "sobremi";
-@import "sobremiPage";
-@import "servicios";
-@import "disenio";
-@import "programador";
-@import "mantenimiento";
-@import "contacto";
-@import "contactoPage";
-@import "footer";
-@import "contactoPage";
-@import "mediaqueries";

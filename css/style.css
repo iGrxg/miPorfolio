@@ -1,49 +1,4 @@
 @charset "UTF-8";
-* {
-  padding: 0%;
-  margin: 0%;
-  box-sizing: border-box; }
-
-html {
-  scroll-behavior: smooth; }
-  html::-webkit-scrollbar {
-    width: 7px; }
-  html::-webkit-scrollbar-thumb {
-    background-color: #09857e;
-    border-radius: 5px; }
-
-.navbar {
-  box-shadow: 0px 2px 12px rgba(0, 0, 0, 0.2);
-  position: absolute; }
-  .navbar .container-fluid .navbar-brand {
-    font-size: 1.6rem;
-    font-weight: 700; }
-  .navbar .container-fluid .navbar-toggler {
-    color: #09857e; }
-  .navbar .container-fluid .offcanvas .offcanvas-header {
-    background-color: #f6f5f5;
-    box-shadow: 0px 2px 12px rgba(0, 0, 0, 0.2); }
-    .navbar .container-fluid .offcanvas .offcanvas-header .offcanvas-title {
-      font-size: 1.6rem;
-      font-weight: 700; }
-  .navbar .container-fluid .offcanvas .offcanvas-body .navbar-nav .nav-item {
-    height: fit-content;
-    width: fit-content; }
-    .navbar .container-fluid .offcanvas .offcanvas-body .navbar-nav .nav-item :active {
-      transform: scale(1.1); }
-    .navbar .container-fluid .offcanvas .offcanvas-body .navbar-nav .nav-item :hover {
-      background-color: #09857e;
-      height: fit-content;
-      width: fit-content;
-      border-radius: 5px;
-      padding-left: 5px;
-      padding-right: 8px; }
-  .navbar .container-fluid .offcanvas .offcanvas-body .imagen-nav {
-    display: flex;
-    justify-content: center;
-    margin-top: 5%;
-    opacity: 0.4; }
-
 /*Estilos del Body*/
 .bodyInicio {
   background-image: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%);
@@ -344,6 +299,107 @@ html {
         .servicios .cajaContainer .cajaUno button:active, .servicios .cajaContainer .cajaDos button:active, .servicios .cajaContainer .cajaTres button:active {
           transform: scale(1.1); }
 
+@media screen and (max-width: 480px) {
+  #servicios .servicios {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; }
+    #servicios .servicios .serviciosText p:nth-child(2) {
+      display: none; }
+    #servicios .servicios .serviciosText p:nth-child(3) {
+      display: none; }
+    #servicios .servicios .cajaCointaner .cajaUno, #servicios .servicios .cajaCointaner .cajaContainer .cajaDos, #servicios .servicios .cajaContainer .cajaCointaner .cajaDos, #servicios .servicios .cajaCointaner .cajaContainer .cajaTres, #servicios .servicios .cajaContainer .cajaCointaner .cajaTres {
+      height: 160px;
+      width: 300px; }
+      #servicios .servicios .cajaCointaner .cajaUno span, #servicios .servicios .cajaCointaner .cajaContainer .cajaDos span, #servicios .servicios .cajaContainer .cajaCointaner .cajaDos span, #servicios .servicios .cajaCointaner .cajaContainer .cajaTres span, #servicios .servicios .cajaContainer .cajaCointaner .cajaTres span {
+        display: none; }
+      #servicios .servicios .cajaCointaner .cajaUno p:nth-child(2), #servicios .servicios .cajaCointaner .cajaContainer .cajaDos p:nth-child(2), #servicios .servicios .cajaContainer .cajaCointaner .cajaDos p:nth-child(2), #servicios .servicios .cajaCointaner .cajaContainer .cajaTres p:nth-child(2), #servicios .servicios .cajaContainer .cajaCointaner .cajaTres p:nth-child(2) {
+        margin-top: 30px;
+        font-size: 13px; }
+      #servicios .servicios .cajaCointaner .cajaUno p:nth-child(3), #servicios .servicios .cajaCointaner .cajaContainer .cajaDos p:nth-child(3), #servicios .servicios .cajaContainer .cajaCointaner .cajaDos p:nth-child(3), #servicios .servicios .cajaCointaner .cajaContainer .cajaTres p:nth-child(3), #servicios .servicios .cajaContainer .cajaCointaner .cajaTres p:nth-child(3) {
+        display: none; }
+      #servicios .servicios .cajaCointaner .cajaUno button, #servicios .servicios .cajaCointaner .cajaContainer .cajaDos button, #servicios .servicios .cajaContainer .cajaCointaner .cajaDos button, #servicios .servicios .cajaCointaner .cajaContainer .cajaTres button, #servicios .servicios .cajaContainer .cajaCointaner .cajaTres button {
+        height: 50px;
+        width: 50px;
+        margin-top: 20px;
+        font-size: 10px; }
+    #servicios .servicios .cajaCointaner .cajaDos {
+      height: 160px;
+      width: 300px; }
+      #servicios .servicios .cajaCointaner .cajaDos span {
+        display: none; }
+      #servicios .servicios .cajaCointaner .cajaDos p:nth-child(2) {
+        margin-top: 30px;
+        font-size: 13px; }
+      #servicios .servicios .cajaCointaner .cajaDos p:nth-child(3) {
+        display: none; }
+      #servicios .servicios .cajaCointaner .cajaDos button {
+        height: 50px;
+        width: 50px;
+        margin-top: 20px;
+        font-size: 10px; }
+    #servicios .servicios .cajaCointaner .cajaTres {
+      height: 160px;
+      width: 300px; }
+      #servicios .servicios .cajaCointaner .cajaTres span {
+        display: none; }
+      #servicios .servicios .cajaCointaner .cajaTres p:nth-child(2) {
+        margin-top: 30px;
+        font-size: 13px; }
+      #servicios .servicios .cajaCointaner .cajaTres p:nth-child(3) {
+        display: none; }
+      #servicios .servicios .cajaCointaner .cajaTres button {
+        height: 50px;
+        width: 50px;
+        margin-top: 20px;
+        font-size: 10px; } }
+
+@media screen and (max-width: 480px) {
+  #servicios .servicios .cajaCointaner {
+    display: flex;
+    flex-direction: column; } }
+
+/*
+@media screen and (max-width: 480px ){
+    #servicios{
+        .servicios{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            .serviciosText{
+                & p:nth-child(2){
+                    display:none;
+                }
+                & p:nth-child(3){
+                    display: none;
+                }
+            }
+            .cajaCointaner{
+                .cajaUno{
+                    height: 160px;
+                    width: 300px;
+                    & span{
+                        display: none;
+                    }
+                    & p:nth-child(2){
+                        margin-top: 30px;
+                        font-size: 13px;
+                    }
+                    & p:nth-child(3){
+                        display: none;
+                    }
+                    & button{
+                        height: 50px;
+                        width: 50px;
+                        margin-top: 20px;
+                        font-size: 10px;
+                    }  
+                }
+            }
+        }
+    }
+}
+*/
 .bodyDisenio {
   background-color: #36a7a1;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif; }
@@ -735,178 +791,226 @@ footer {
         margin-top: 50px; }
 
 /*Media Queries Movil*/
-@media screen and (max-width: 480px) {
-  .contendorInicio .principalInicio .model {
-    position: relative;
-    right: 30px; }
-  .contendorInicio .principalInicio .textContainer {
-    margin-left: 30px;
-    margin-right: 20px;
-    padding: 0px;
-    position: relative;
-    bottom: 60px; }
-    .contendorInicio .principalInicio .textContainer h3:nth-child(1) {
-      font-size: 20px; }
-    .contendorInicio .principalInicio .textContainer h1:nth-child(2) {
-      font-size: 25px; }
-    .contendorInicio .principalInicio .textContainer h3:nth-child(3) {
-      font-size: 15px; }
-    .contendorInicio .principalInicio .textContainer h3:nth-child(4) {
-      font-size: 15px; }
-    .contendorInicio .principalInicio .textContainer button {
-      width: 6.2rem;
-      height: 1.6rem; }
-  .sobreContainer {
-    height: 350px;
-    width: 100%; }
-    .sobreContainer img {
-      margin-bottom: 30px;
-      margin-right: 10px;
-      margin-left: 10px; }
-    .sobreContainer .sobreTextp:nth-child(1) {
-      font-size: 20px; }
-    .sobreContainer .sobreText p:nth-child(2) {
-      font-size: 15px; }
-    .sobreContainer .sobreText p:nth-child(3) {
-      font-size: 12px; }
-    .sobreContainer .sobreText button {
-      display: flex;
-      flex-direction: column;
-      justify-content: center; }
-  .servicios {
-    display: flex;
-    flex-direction: column;
-    justify-content: center; }
-    .servicios .serviciosText p:nth-child(2) {
-      display: none; }
-    .servicios .serviciosText p:nth-child(3) {
-      display: none; }
-    .servicios .cajaCointaner .cajaUno, .servicios .cajaCointaner .cajaContainer .cajaDos, .servicios .cajaContainer .cajaCointaner .cajaDos, .servicios .cajaCointaner .cajaContainer .cajaTres, .servicios .cajaContainer .cajaCointaner .cajaTres {
-      height: 160px;
-      width: 300px; }
-      .servicios .cajaCointaner .cajaUno span, .servicios .cajaCointaner .cajaContainer .cajaDos span, .servicios .cajaContainer .cajaCointaner .cajaDos span, .servicios .cajaCointaner .cajaContainer .cajaTres span, .servicios .cajaContainer .cajaCointaner .cajaTres span {
-        display: none; }
-      .servicios .cajaCointaner .cajaUno p:nth-child(2), .servicios .cajaCointaner .cajaContainer .cajaDos p:nth-child(2), .servicios .cajaContainer .cajaCointaner .cajaDos p:nth-child(2), .servicios .cajaCointaner .cajaContainer .cajaTres p:nth-child(2), .servicios .cajaContainer .cajaCointaner .cajaTres p:nth-child(2) {
-        margin-top: 30px;
-        font-size: 13px; }
-      .servicios .cajaCointaner .cajaUno p:nth-child(3), .servicios .cajaCointaner .cajaContainer .cajaDos p:nth-child(3), .servicios .cajaContainer .cajaCointaner .cajaDos p:nth-child(3), .servicios .cajaCointaner .cajaContainer .cajaTres p:nth-child(3), .servicios .cajaContainer .cajaCointaner .cajaTres p:nth-child(3) {
-        display: none; }
-      .servicios .cajaCointaner .cajaUno button, .servicios .cajaCointaner .cajaContainer .cajaDos button, .servicios .cajaContainer .cajaCointaner .cajaDos button, .servicios .cajaCointaner .cajaContainer .cajaTres button, .servicios .cajaContainer .cajaCointaner .cajaTres button {
-        height: 50px;
-        width: 50px;
-        margin-top: 20px;
-        font-size: 10px; }
-    .servicios .cajaCointaner .cajaDos {
-      height: 160px;
-      width: 300px; }
-      .servicios .cajaCointaner .cajaDos span {
-        display: none; }
-      .servicios .cajaCointaner .cajaDos p:nth-child(2) {
-        margin-top: 30px;
-        font-size: 13px; }
-      .servicios .cajaCointaner .cajaDos p:nth-child(3) {
-        display: none; }
-      .servicios .cajaCointaner .cajaDos button {
-        height: 50px;
-        width: 50px;
-        margin-top: 20px;
-        font-size: 10px; }
-    .servicios .cajaCointaner .cajaTres {
-      height: 160px;
-      width: 300px; }
-      .servicios .cajaCointaner .cajaTres span {
-        display: none; }
-      .servicios .cajaCointaner .cajaTres p:nth-child(2) {
-        margin-top: 30px;
-        font-size: 13px; }
-      .servicios .cajaCointaner .cajaTres p:nth-child(3) {
-        display: none; }
-      .servicios .cajaCointaner .cajaTres button {
-        height: 50px;
-        width: 50px;
-        margin-top: 20px;
-        font-size: 10px; }
-  .contacto p {
-    font-size: 25px; }
-  footer p:nth-child(2) {
-    font-size: 10px; } }
+/*
+@media screen and (max-width: 480px ){
+.bodyIncio{
+    .contendorInicio{        
+        .principalInicio{
+            .model{
+                position: relative;
+                right: 30px;
+            }
+            .textContainer{
+                margin-left: 30px;
+                margin-right: 20px;
+                padding: 0px;
+                position: relative;
+                bottom: 60px;
+                & h3:nth-child(1){
+                    font-size: 20px;
+                }
+                & h1:nth-child(2){
+                    font-size: 25px;
+                }       
+                & h3:nth-child(3){
+                    font-size: 15px;
+                }
+            
+                & h3:nth-child(4){
+                    font-size: 15px;
+                }
+                & button{
+                    width: 6.2rem;
+                    height: 1.6rem;
+                }
+            }
+        }
+    }
 
-/*Media Queries Tablet*/
-.principalInicio .textContainer {
-  margin-top: 60px; }
-  .principalInicio .textContainer h3:nth-child(1) {
-    font-size: 20px; }
-  .principalInicio .textContainer h1:nth-child(2) {
-    font-size: 25px; }
-  .principalInicio .textContainer h3:nth-child(3) {
-    font-size: 15px; }
-  .principalInicio .textContainer h3:nth-child(4) {
-    font-size: 15px; }
+    #sobremi{
+        .sobreContainer{
+            height: 350px;
+            width: 100%;
+            & img{
+                margin-bottom: 30px;
+                margin-right: 10px;
+                margin-left: 10px;
+            }
+            .sobreText{
+                &p:nth-child(1){
+                    font-size: 20px;
+                }
+                & p:nth-child(2){
+                    font-size: 15px;
+                }
+                & p:nth-child(3){
+                    font-size: 12px;
+                }
+                & button{
+                    @include flex (flex, column, center);
+                }
+            }
+        }
+    }
 
-.principalInicio .sobreContainer {
-  height: 350px;
-  width: 100%; }
-
-.principalInicio .servicios {
-  display: flex;
-  flex-direction: column;
-  justify-content: center; }
-  .principalInicio .servicios .cajaCointaner .cajaUno, .principalInicio .servicios .cajaCointaner .cajaContainer .cajaDos, .principalInicio .servicios .cajaContainer .cajaCointaner .cajaDos, .principalInicio .servicios .cajaCointaner .cajaContainer .cajaTres, .principalInicio .servicios .cajaContainer .cajaCointaner .cajaTres {
-    height: 160px;
-    width: 300px; }
-    .principalInicio .servicios .cajaCointaner .cajaUno span, .principalInicio .servicios .cajaCointaner .cajaContainer .cajaDos span, .principalInicio .servicios .cajaContainer .cajaCointaner .cajaDos span, .principalInicio .servicios .cajaCointaner .cajaContainer .cajaTres span, .principalInicio .servicios .cajaContainer .cajaCointaner .cajaTres span {
-      display: none; }
-    .principalInicio .servicios .cajaCointaner .cajaUno p:nth-child(2), .principalInicio .servicios .cajaCointaner .cajaContainer .cajaDos p:nth-child(2), .principalInicio .servicios .cajaContainer .cajaCointaner .cajaDos p:nth-child(2), .principalInicio .servicios .cajaCointaner .cajaContainer .cajaTres p:nth-child(2), .principalInicio .servicios .cajaContainer .cajaCointaner .cajaTres p:nth-child(2) {
-      margin-top: 30px;
-      font-size: 13px; }
-    .principalInicio .servicios .cajaCointaner .cajaUno p:nth-child(3), .principalInicio .servicios .cajaCointaner .cajaContainer .cajaDos p:nth-child(3), .principalInicio .servicios .cajaContainer .cajaCointaner .cajaDos p:nth-child(3), .principalInicio .servicios .cajaCointaner .cajaContainer .cajaTres p:nth-child(3), .principalInicio .servicios .cajaContainer .cajaCointaner .cajaTres p:nth-child(3) {
-      display: none; }
-    .principalInicio .servicios .cajaCointaner .cajaUno button, .principalInicio .servicios .cajaCointaner .cajaContainer .cajaDos button, .principalInicio .servicios .cajaContainer .cajaCointaner .cajaDos button, .principalInicio .servicios .cajaCointaner .cajaContainer .cajaTres button, .principalInicio .servicios .cajaContainer .cajaCointaner .cajaTres button {
-      height: 50px;
-      width: 50px;
-      margin-top: 20px;
-      font-size: 10px; }
-  .principalInicio .servicios .cajaCointaner .cajaDos {
-    height: 160px;
-    width: 300px; }
-    .principalInicio .servicios .cajaCointaner .cajaDos span {
-      display: none; }
-    .principalInicio .servicios .cajaCointaner .cajaDos p:nth-child(2) {
-      margin-top: 30px;
-      font-size: 13px; }
-    .principalInicio .servicios .cajaCointaner .cajaDos p:nth-child(3) {
-      display: none; }
-    .principalInicio .servicios .cajaCointaner .cajaDos button {
-      height: 50px;
-      width: 50px;
-      margin-top: 20px;
-      font-size: 10px; }
-  .principalInicio .servicios .cajaCointaner .cajaTres {
-    height: 160px;
-    width: 300px; }
-    .principalInicio .servicios .cajaCointaner .cajaTres span {
-      display: none; }
-    .principalInicio .servicios .cajaCointaner .cajaTres p:nth-child(2) {
-      margin-top: 30px;
-      font-size: 13px; }
-    .principalInicio .servicios .cajaCointaner .cajaTres p:nth-child(3) {
-      display: none; }
-    .principalInicio .servicios .cajaCointaner .cajaTres button {
-      height: 50px;
-      width: 50px;
-      margin-top: 20px;
-      font-size: 10px; }
+#servicios{
+    .servicios{
+        @include flex (flex, column, center);
+            .serviciosText{
+                & p:nth-child(2){
+                    display: none;
+                }
+                & p:nth-child(3){
+                    display: none;
+                }
+            }
+            .cajaCointaner{
+                .cajaUno{
+                    height: 160px;
+                    width: 300px;
+                    & span{
+                        display: none;
+                    }
+                    & p:nth-child(2){
+                        margin-top: 30px;
+                        font-size: 13px;
+                    }
+                    & p:nth-child(3){
+                    display: none;
+                    }
+                    & button{
+                        height: 50px;
+                        width: 50px;
+                        margin-top: 20px;
+                        font-size: 10px;
+                    }
+                }
+                .cajaDos{
+                    height: 160px;
+                    width: 300px;
+                    & span{
+                        display: none;
+                    }
+                    & p:nth-child(2){
+                        margin-top: 30px;
+                        font-size: 13px;
+                    }
+                    & p:nth-child(3){
+                        display: none;
+                    }
+                    & button{
+                        height: 50px;
+                        width: 50px;
+                        margin-top: 20px;
+                        font-size: 10px;
+                    }
+                }
+                .cajaTres{
+                    height: 160px;
+                    width: 300px;
+                    & span{
+                        display: none;
+                    }
+                    & p:nth-child(2){
+                        margin-top: 30px;
+                        font-size: 13px;
+                    }
+                    & p:nth-child(3){
+                        display: none;
+                    }
+                    & button{
+                        height: 50px;
+                        width: 50px;
+                        margin-top: 20px;
+                        font-size: 10px;
+                    }
+                }
+            }
+        }
+    }
+    #contacto{
+        .contacto{
+            & p{
+                font-size: 25px;
+            }
+        }
+    }
+    #footer{
+        footer{
+            & p:nth-child(2){
+                font-size: 10px;
+            }
+        }
+    }
+}
+}
 
 /*Media Queries Contacto*/
+/*
 @media (min-width: 700px) {
-  .content .contact-wrapper {
-    display: grid;
-    grid-template-columns: 2fr 1fr; }
-  .content > * {
-    padding: 2em; }
-  .content .contact-info h4 {
-    text-align: left; }
-  .content .contact-info ul {
-    text-align: left; }
-  .content .contact-info p {
-    text-align: left; } }
+    .content{
+        .contact-wrapper{
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+        }
+        & > *{
+            padding: 2em
+        }
+        .contact-info{
+            & h4{
+                text-align: left;
+            }
+            & ul{
+                text-align: left;
+            }
+            & p{
+                text-align: left;
+            }
+        }
+    }    
+}
+*/
+* {
+  padding: 0%;
+  margin: 0%;
+  box-sizing: border-box; }
+
+html {
+  scroll-behavior: smooth; }
+  html::-webkit-scrollbar {
+    width: 7px; }
+  html::-webkit-scrollbar-thumb {
+    background-color: #09857e;
+    border-radius: 5px; }
+
+.navbar {
+  box-shadow: 0px 2px 12px rgba(0, 0, 0, 0.2);
+  position: absolute; }
+  .navbar .container-fluid .navbar-brand {
+    font-size: 1.6rem;
+    font-weight: 700; }
+  .navbar .container-fluid .navbar-toggler {
+    color: #09857e; }
+  .navbar .container-fluid .offcanvas .offcanvas-header {
+    background-color: #f6f5f5;
+    box-shadow: 0px 2px 12px rgba(0, 0, 0, 0.2); }
+    .navbar .container-fluid .offcanvas .offcanvas-header .offcanvas-title {
+      font-size: 1.6rem;
+      font-weight: 700; }
+  .navbar .container-fluid .offcanvas .offcanvas-body .navbar-nav .nav-item {
+    height: fit-content;
+    width: fit-content; }
+    .navbar .container-fluid .offcanvas .offcanvas-body .navbar-nav .nav-item :active {
+      transform: scale(1.1); }
+    .navbar .container-fluid .offcanvas .offcanvas-body .navbar-nav .nav-item :hover {
+      background-color: #09857e;
+      height: fit-content;
+      width: fit-content;
+      border-radius: 5px;
+      padding-left: 5px;
+      padding-right: 8px; }
+  .navbar .container-fluid .offcanvas .offcanvas-body .imagen-nav {
+    display: flex;
+    justify-content: center;
+    margin-top: 5%;
+    opacity: 0.4; }
