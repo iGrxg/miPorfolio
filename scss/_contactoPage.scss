@@ -100,3 +100,28 @@
         }
     }
 }
+@media(min-width: 700px){
+    .bodyContacto{
+        padding: 0 4em;
+        .content{
+            .contact-wrapper{
+                display: grid;
+                grid-template-columns: 2fr 1fr;
+                & > * {
+                    padding: 2em;
+                }
+            }
+            .contact-info{
+                & h4{
+                    text-align: left;
+                }
+                & ul{
+                    text-align: left;
+                }
+                & p{
+                    text-align: left;
+                }
+            }
+        }
+    }
+}

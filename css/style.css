@@ -81,6 +81,38 @@
     .principalInicio .textContainer button:active {
       transform: scale(1.1); }
 
+@media screen and (max-width: 480px) {
+  .bodyInicio .contenedorInicio .principalInicio .model {
+    height: 150px;
+    width: 250px;
+    position: relative;
+    top: 60px;
+    right: 30px; }
+  .bodyInicio .contenedorInicio .principalInicio .textContainer {
+    margin-left: 30px;
+    margin-right: 20px;
+    padding: 0px;
+    position: relative;
+    bottom: 60px; }
+    .bodyInicio .contenedorInicio .principalInicio .textContainer h3:nth-child(1) {
+      font-size: 20px; }
+    .bodyInicio .contenedorInicio .principalInicio .textContainer h1:nth-child(2) {
+      font-size: 30px; }
+    .bodyInicio .contenedorInicio .principalInicio .textContainer h3:nth-child(3) {
+      font-size: 15px; }
+    .bodyInicio .contenedorInicio .principalInicio .textContainer h3:nth-child(4) {
+      font-size: 15px; } }
+
+@media screen and (max-width: 784px) {
+  .bodyInicio .contenedorInicio .principalInicio .textContainer h3:nth-child(1) {
+    font-size: 20px; }
+  .bodyInicio .contenedorInicio .principalInicio .textContainer h1:nth-child(2) {
+    font-size: 25px; }
+  .bodyInicio .contenedorInicio .principalInicio .textContainer h3:nth-child(3) {
+    font-size: 15px; }
+  .bodyInicio .contenedorInicio .principalInicio .textContainer h3:nth-child(4) {
+    font-size: 15px; } }
+
 .sobreContainer {
   width: 80%;
   height: 20.6rem;
@@ -134,6 +166,28 @@
         background-color: #fff; }
       .sobreContainer .sobreText .mas-info:active {
         transform: scale(1.1); }
+
+@media screen and (max-width: 480px) {
+  #sobremi .sobreContainer {
+    height: 350px;
+    width: 100%; }
+    #sobremi .sobreContainer .sobreText p:nth-child(1) {
+      font-size: 20px; }
+    #sobremi .sobreContainer .sobreText p:nth-child(2) {
+      font-size: 15px; }
+    #sobremi .sobreContainer .sobreText p:nth-child(3) {
+      font-size: 12px; }
+    #sobremi .sobreContainer .sobreText p:nth-child(4) {
+      font-size: 12px; }
+    #sobremi .sobreContainer .sobreText .yo {
+      margin-bottom: 30px;
+      margin-right: 10px;
+      margin-left: 10px; } }
+
+@media screen and (max-width: 784px) {
+  #sobremi .sobreContainer {
+    height: 350px;
+    width: 100%; } }
 
 .bodySobremi {
   background-color: #f1ebeb;
@@ -308,98 +362,73 @@
       display: none; }
     #servicios .servicios .serviciosText p:nth-child(3) {
       display: none; }
-    #servicios .servicios .cajaCointaner .cajaUno, #servicios .servicios .cajaCointaner .cajaContainer .cajaDos, #servicios .servicios .cajaContainer .cajaCointaner .cajaDos, #servicios .servicios .cajaCointaner .cajaContainer .cajaTres, #servicios .servicios .cajaContainer .cajaCointaner .cajaTres {
+    #servicios .servicios .cajaContainer .cajaUno, #servicios .servicios .cajaContainer .cajaDos, #servicios .servicios .cajaContainer .cajaTres {
       height: 160px;
       width: 300px; }
-      #servicios .servicios .cajaCointaner .cajaUno span, #servicios .servicios .cajaCointaner .cajaContainer .cajaDos span, #servicios .servicios .cajaContainer .cajaCointaner .cajaDos span, #servicios .servicios .cajaCointaner .cajaContainer .cajaTres span, #servicios .servicios .cajaContainer .cajaCointaner .cajaTres span {
+      #servicios .servicios .cajaContainer .cajaUno span, #servicios .servicios .cajaContainer .cajaDos span, #servicios .servicios .cajaContainer .cajaTres span {
         display: none; }
-      #servicios .servicios .cajaCointaner .cajaUno p:nth-child(2), #servicios .servicios .cajaCointaner .cajaContainer .cajaDos p:nth-child(2), #servicios .servicios .cajaContainer .cajaCointaner .cajaDos p:nth-child(2), #servicios .servicios .cajaCointaner .cajaContainer .cajaTres p:nth-child(2), #servicios .servicios .cajaContainer .cajaCointaner .cajaTres p:nth-child(2) {
+      #servicios .servicios .cajaContainer .cajaUno p:nth-child(2), #servicios .servicios .cajaContainer .cajaDos p:nth-child(2), #servicios .servicios .cajaContainer .cajaTres p:nth-child(2) {
         margin-top: 30px;
         font-size: 13px; }
-      #servicios .servicios .cajaCointaner .cajaUno p:nth-child(3), #servicios .servicios .cajaCointaner .cajaContainer .cajaDos p:nth-child(3), #servicios .servicios .cajaContainer .cajaCointaner .cajaDos p:nth-child(3), #servicios .servicios .cajaCointaner .cajaContainer .cajaTres p:nth-child(3), #servicios .servicios .cajaContainer .cajaCointaner .cajaTres p:nth-child(3) {
+      #servicios .servicios .cajaContainer .cajaUno p:nth-child(3), #servicios .servicios .cajaContainer .cajaDos p:nth-child(3), #servicios .servicios .cajaContainer .cajaTres p:nth-child(3) {
         display: none; }
-      #servicios .servicios .cajaCointaner .cajaUno button, #servicios .servicios .cajaCointaner .cajaContainer .cajaDos button, #servicios .servicios .cajaContainer .cajaCointaner .cajaDos button, #servicios .servicios .cajaCointaner .cajaContainer .cajaTres button, #servicios .servicios .cajaContainer .cajaCointaner .cajaTres button {
+      #servicios .servicios .cajaContainer .cajaUno button, #servicios .servicios .cajaContainer .cajaDos button, #servicios .servicios .cajaContainer .cajaTres button {
         height: 50px;
         width: 50px;
         margin-top: 20px;
         font-size: 10px; }
-    #servicios .servicios .cajaCointaner .cajaDos {
+    #servicios .servicios .cajaContainer .cajaDos {
       height: 160px;
       width: 300px; }
-      #servicios .servicios .cajaCointaner .cajaDos span {
+      #servicios .servicios .cajaContainer .cajaDos span {
         display: none; }
-      #servicios .servicios .cajaCointaner .cajaDos p:nth-child(2) {
+      #servicios .servicios .cajaContainer .cajaDos p:nth-child(2) {
         margin-top: 30px;
         font-size: 13px; }
-      #servicios .servicios .cajaCointaner .cajaDos p:nth-child(3) {
+      #servicios .servicios .cajaContainer .cajaDos p:nth-child(3) {
         display: none; }
-      #servicios .servicios .cajaCointaner .cajaDos button {
+      #servicios .servicios .cajaContainer .cajaDos button {
         height: 50px;
         width: 50px;
         margin-top: 20px;
         font-size: 10px; }
-    #servicios .servicios .cajaCointaner .cajaTres {
+    #servicios .servicios .cajaContainer .cajaTres {
       height: 160px;
       width: 300px; }
-      #servicios .servicios .cajaCointaner .cajaTres span {
+      #servicios .servicios .cajaContainer .cajaTres span {
         display: none; }
-      #servicios .servicios .cajaCointaner .cajaTres p:nth-child(2) {
+      #servicios .servicios .cajaContainer .cajaTres p:nth-child(2) {
         margin-top: 30px;
         font-size: 13px; }
-      #servicios .servicios .cajaCointaner .cajaTres p:nth-child(3) {
+      #servicios .servicios .cajaContainer .cajaTres p:nth-child(3) {
         display: none; }
-      #servicios .servicios .cajaCointaner .cajaTres button {
+      #servicios .servicios .cajaContainer .cajaTres button {
         height: 50px;
         width: 50px;
         margin-top: 20px;
         font-size: 10px; } }
 
-@media screen and (max-width: 480px) {
-  #servicios .servicios .cajaCointaner {
+@media screen and (max-width: 784px) {
+  #servicios .servicios {
     display: flex;
-    flex-direction: column; } }
+    flex-direction: column;
+    justify-content: center; }
+    #servicios .servicios .cajaContainer .cajaUno, #servicios .servicios .cajaContainer .cajaDos, #servicios .servicios .cajaContainer .cajaTres {
+      height: 160px;
+      width: 300px; }
+      #servicios .servicios .cajaContainer .cajaUno span, #servicios .servicios .cajaContainer .cajaDos span, #servicios .servicios .cajaContainer .cajaTres span {
+        display: none; }
+      #servicios .servicios .cajaContainer .cajaUno p:nth-child(2), #servicios .servicios .cajaContainer .cajaDos p:nth-child(2), #servicios .servicios .cajaContainer .cajaTres p:nth-child(2) {
+        margin-top: 30px;
+        font-size: 13px; }
+      #servicios .servicios .cajaContainer .cajaUno p:nth-child(3), #servicios .servicios .cajaContainer .cajaDos p:nth-child(3), #servicios .servicios .cajaContainer .cajaTres p:nth-child(3) {
+        display: none; }
+      #servicios .servicios .cajaContainer .cajaUno button, #servicios .servicios .cajaContainer .cajaDos button, #servicios .servicios .cajaContainer .cajaTres button {
+        height: 50px;
+        width: 50px;
+        margin-top: 20px;
+        font-size: 10px; } }
 
-/*
-@media screen and (max-width: 480px ){
-    #servicios{
-        .servicios{
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            .serviciosText{
-                & p:nth-child(2){
-                    display:none;
-                }
-                & p:nth-child(3){
-                    display: none;
-                }
-            }
-            .cajaCointaner{
-                .cajaUno{
-                    height: 160px;
-                    width: 300px;
-                    & span{
-                        display: none;
-                    }
-                    & p:nth-child(2){
-                        margin-top: 30px;
-                        font-size: 13px;
-                    }
-                    & p:nth-child(3){
-                        display: none;
-                    }
-                    & button{
-                        height: 50px;
-                        width: 50px;
-                        margin-top: 20px;
-                        font-size: 10px;
-                    }  
-                }
-            }
-        }
-    }
-}
-*/
 .bodyDisenio {
   background-color: #36a7a1;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif; }
@@ -576,6 +605,10 @@
     .contacto button:active {
       transform: scale(1.1); }
 
+@media screen and (max-width: 480px) {
+  #contacto .contacto p {
+    font-size: 20px; } }
+
 .bodyContacto {
   background-image: linear-gradient(to top, #d5d4d0 0%, #d5d4d0 1%, #eeeeec 31%, #efeeec 75%, #e9e9e7 100%);
   line-height: 1.6;
@@ -657,6 +690,21 @@
         display: flex;
         justify-content: center;
         margin-top: 50px; }
+
+@media (min-width: 700px) {
+  .bodyContacto {
+    padding: 0 4em; }
+    .bodyContacto .content .contact-wrapper {
+      display: grid;
+      grid-template-columns: 2fr 1fr; }
+      .bodyContacto .content .contact-wrapper > * {
+        padding: 2em; }
+    .bodyContacto .content .contact-info h4 {
+      text-align: left; }
+    .bodyContacto .content .contact-info ul {
+      text-align: left; }
+    .bodyContacto .content .contact-info p {
+      text-align: left; } }
 
 footer {
   height: 18.75rem;
@@ -708,6 +756,10 @@ footer {
     bottom: 10px;
     transform: translateX(-50%); }
 
+@media screen and (max-width: 480px) {
+  #footer footer p:nth-child(2) {
+    font-size: 10px; } }
+
 .bodyContacto {
   background-image: linear-gradient(to top, #d5d4d0 0%, #d5d4d0 1%, #eeeeec 31%, #efeeec 75%, #e9e9e7 100%);
   line-height: 1.6;
@@ -790,186 +842,21 @@ footer {
         justify-content: center;
         margin-top: 50px; }
 
-/*Media Queries Movil*/
-/*
-@media screen and (max-width: 480px ){
-.bodyIncio{
-    .contendorInicio{        
-        .principalInicio{
-            .model{
-                position: relative;
-                right: 30px;
-            }
-            .textContainer{
-                margin-left: 30px;
-                margin-right: 20px;
-                padding: 0px;
-                position: relative;
-                bottom: 60px;
-                & h3:nth-child(1){
-                    font-size: 20px;
-                }
-                & h1:nth-child(2){
-                    font-size: 25px;
-                }       
-                & h3:nth-child(3){
-                    font-size: 15px;
-                }
-            
-                & h3:nth-child(4){
-                    font-size: 15px;
-                }
-                & button{
-                    width: 6.2rem;
-                    height: 1.6rem;
-                }
-            }
-        }
-    }
-
-    #sobremi{
-        .sobreContainer{
-            height: 350px;
-            width: 100%;
-            & img{
-                margin-bottom: 30px;
-                margin-right: 10px;
-                margin-left: 10px;
-            }
-            .sobreText{
-                &p:nth-child(1){
-                    font-size: 20px;
-                }
-                & p:nth-child(2){
-                    font-size: 15px;
-                }
-                & p:nth-child(3){
-                    font-size: 12px;
-                }
-                & button{
-                    @include flex (flex, column, center);
-                }
-            }
-        }
-    }
-
-#servicios{
-    .servicios{
-        @include flex (flex, column, center);
-            .serviciosText{
-                & p:nth-child(2){
-                    display: none;
-                }
-                & p:nth-child(3){
-                    display: none;
-                }
-            }
-            .cajaCointaner{
-                .cajaUno{
-                    height: 160px;
-                    width: 300px;
-                    & span{
-                        display: none;
-                    }
-                    & p:nth-child(2){
-                        margin-top: 30px;
-                        font-size: 13px;
-                    }
-                    & p:nth-child(3){
-                    display: none;
-                    }
-                    & button{
-                        height: 50px;
-                        width: 50px;
-                        margin-top: 20px;
-                        font-size: 10px;
-                    }
-                }
-                .cajaDos{
-                    height: 160px;
-                    width: 300px;
-                    & span{
-                        display: none;
-                    }
-                    & p:nth-child(2){
-                        margin-top: 30px;
-                        font-size: 13px;
-                    }
-                    & p:nth-child(3){
-                        display: none;
-                    }
-                    & button{
-                        height: 50px;
-                        width: 50px;
-                        margin-top: 20px;
-                        font-size: 10px;
-                    }
-                }
-                .cajaTres{
-                    height: 160px;
-                    width: 300px;
-                    & span{
-                        display: none;
-                    }
-                    & p:nth-child(2){
-                        margin-top: 30px;
-                        font-size: 13px;
-                    }
-                    & p:nth-child(3){
-                        display: none;
-                    }
-                    & button{
-                        height: 50px;
-                        width: 50px;
-                        margin-top: 20px;
-                        font-size: 10px;
-                    }
-                }
-            }
-        }
-    }
-    #contacto{
-        .contacto{
-            & p{
-                font-size: 25px;
-            }
-        }
-    }
-    #footer{
-        footer{
-            & p:nth-child(2){
-                font-size: 10px;
-            }
-        }
-    }
-}
-}
-
-/*Media Queries Contacto*/
-/*
 @media (min-width: 700px) {
-    .content{
-        .contact-wrapper{
-            display: grid;
-            grid-template-columns: 2fr 1fr;
-        }
-        & > *{
-            padding: 2em
-        }
-        .contact-info{
-            & h4{
-                text-align: left;
-            }
-            & ul{
-                text-align: left;
-            }
-            & p{
-                text-align: left;
-            }
-        }
-    }    
-}
-*/
+  .bodyContacto {
+    padding: 0 4em; }
+    .bodyContacto .content .contact-wrapper {
+      display: grid;
+      grid-template-columns: 2fr 1fr; }
+      .bodyContacto .content .contact-wrapper > * {
+        padding: 2em; }
+    .bodyContacto .content .contact-info h4 {
+      text-align: left; }
+    .bodyContacto .content .contact-info ul {
+      text-align: left; }
+    .bodyContacto .content .contact-info p {
+      text-align: left; } }
+
 * {
   padding: 0%;
   margin: 0%;

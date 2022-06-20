@@ -58,3 +58,13 @@ footer{
         transform: translateX(-50%);
     }
 }
+@media screen and (max-width: 480px ){
+    #footer{
+        footer{
+            & p:nth-child(2){
+                font-size: 10px;
+            }
+        }
+    }
+}
+

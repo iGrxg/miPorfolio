@@ -63,3 +63,38 @@
         }
     }
 }
+@media screen and (max-width: 480px ){
+    #sobremi{
+        .sobreContainer{
+            height: 350px;
+            width: 100%;
+            .sobreText{               
+                & p:nth-child(1){
+                    font-size: 20px;
+                }
+                & p:nth-child(2){
+                    font-size: 15px;
+                }
+                & p:nth-child(3){
+                    font-size: 12px;
+                }
+                & p:nth-child(4){
+                    font-size: 12px;
+                }
+                .yo{
+                    margin-bottom: 30px;
+                    margin-right: 10px;
+                    margin-left: 10px;
+                }               
+            }            
+        }
+    }
+}
+@media screen and (max-width: 784px ){
+    #sobremi{
+        .sobreContainer{
+            height: 350px;
+            width: 100%;
+        }
+    }
+}
